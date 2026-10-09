@@ -409,3 +409,6 @@ html[data-schrift="gross"] { font-size: 112.5%; }
 .leistungen summary { color: var(--blau); }
 .leistungen summary:hover { color: var(--tinte); text-decoration: underline; text-underline-offset: .18em; }
 .leistungen details[open] summary { color: var(--tinte); }
+
+/* Neuigkeiten-Spalte fest im Seitenfluss (scrollt normal mit, wandert nicht mit) */
+.news-seite { position: static; }
