@@ -6,8 +6,13 @@ Die offizielle Seite ist weiterhin <https://www.steuerberater-marinov.de>. Diese
 ## Inhalt
 
 - Drei Sprachen: Deutsch (Startseite `index.html`), Englisch (`en/`), Bulgarisch (`bg/`)
-- Startbereich: ein Scroll spielt die Kamerafahrt zum Tischglobus ab, danach ist der Globus drehbar; Deutschland und Bulgarien sind anklickbar
-- Alle Texte der alten Seite: Kanzlei, Philosophie, Partner, Beratung (Expatriates und Arbeitgeber mit aufklappbaren Einzelleistungen), Freiberufler, Einwanderer, Gebühren, Karriere, Links, Impressum, Datenschutz
+- Startbereich: ein Scroll spielt die Kamerafahrt zum Tischglobus ab, danach ist der Globus drehbar; jedes Land ist anklickbar
+  (Skript `assets/globus.js`, Texte je Sprache als JSON in der Startseite), zusätzlich Auswahlfeld und Tastaturbedienung
+- Alle Texte der alten Seite: Kanzlei, Philosophie, Partner, Beratung (Expatriates und Arbeitgeber mit aufklappbaren Einzelleistungen),
+  Freiberufler, Einwanderer, Gebühren, Karriere, Links, Impressum
+- Suche über alle Seiten, Steuer-Nachrichten von Haufe (täglich per GitHub Action `tools/news.py` → `assets/news.json`)
+- Darstellung: Dunkel (Standard), Hell oder wie Gerät, Schriftgröße normal oder groß
+- `404.html` leitet Adressen der alten Seite (`/index.php/…`) auf die neuen Seiten um
 - Keine Inhalte von fremden Servern: Schriften (Spectral, Golos Text), three.js, d3, Kartendaten liegen in `assets/`
 
 ## Gegenüber der alten Seite geändert
@@ -15,15 +20,17 @@ Die offizielle Seite ist weiterhin <https://www.steuerberater-marinov.de>. Diese
 - Impressum: § 5 DDG statt § 5 TMG
 - E101 heißt jetzt A1-Bescheinigung
 - Links: Steuerberaterkammer Sachsen-Anhalt statt Hessen, Frankfurter Finanzbehörden entfernt
-- Telefonnummer in der Datenschutzerklärung an die übrige Seite angeglichen (+49 340 661496-24)
+- Telefonnummer überall +49 340 661496-24 (die alte Nummer aus der Datenschutzerklärung ist nicht mehr aktiv)
+- Datenschutzerklärung neu geschrieben (GitHub Pages, keine Cookies, lokaler Speicher, Nachrichten); die bulgarische Seite verweist auf EN/DE
+- Kein „internationales Netzwerk“ mehr, stattdessen Mandanten in vielen Ländern
 - Tippfehler korrigiert, Gebühren-Beispiel ohne Jahreszahl 2009
-- Kein Nachrichten-Kasten (Haufe-Feed) und keine Suche mehr
 
-## Vor der Veröffentlichung prüfen
+## Vor der Veröffentlichung
 
-- Telefonnummer: Die alte Datenschutzerklärung nannte 0340/850769-0 – welche Nummer gilt?
-- Datenschutzerklärung an den neuen Hoster anpassen (Server-Logs, keine Cookies mehr)
-- Texte der Länderkarten im Globus und die bulgarischen Kurztexte gegenlesen lassen
-- Hochformat-Video für Handys, ggf. neues Video mit Start- und Endbild
+- Datenschutzerklärung von einer Fachperson prüfen lassen
+- Bulgarische Texte gegenlesen lassen
+- Hochformat-Video für Handys (bis dahin Ausschnitt des 16:9-Videos)
+- Umzug der Domain: Anleitung liegt außerhalb dieses Repos (`UMZUG-DOMAIN.md`)
 
-Gebaut mit `build.py` aus den gesicherten Texten der alten Seite.
+Gebaut mit `build.py` aus den gesicherten Texten der alten Seite; geprüft mit `pruefen.py` (Verweise, HTML, Überschriften, Beschriftungen,
+Textfehler) und `vollstaendig.py` (alle Zeilen der alten Seite vorhanden).
