@@ -414,7 +414,7 @@ function anordnen() {
   const ox = (B - VIDEO.b * s) * posX, oy = (H - VIDEO.h * s) / 2;
   lage = { x: ox + KUGEL.x * s, y: oy + KUGEL.y * s, r: KUGEL.r * s + 1.5 };
   neigung.position.set(lage.x - B / 2, H / 2 - lage.y, 0);
-  neigung.scale.set(lage.r, lage.r, lage.r); // Kugel im Video ist minimal schmaler als hoch
+  neigung.scale.set(lage.r * 0.99, lage.r, lage.r); // Kugel im Video ist minimal schmaler als hoch
   zeichneRingVorne(s, ox, oy);
 }
 addEventListener('resize', anordnen);
