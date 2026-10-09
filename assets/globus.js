@@ -3,7 +3,7 @@
 // Texte und Länderkarten je Sprache stehen in <script type="application/json" id="globus-daten"> (schreibt build.py).
 // Lage der Kugel im Video abgleichen: Startseite mit ?abgleich öffnen, dann abgleich.setze(x, y, r) in der Konsole.
 import * as THREE from './lib/three.module.min.js';
-const { geoEquirectangular, geoPath, geoCentroid, geoDistance } = window.d3;
+const { geoEquirectangular, geoPath, geoCentroid, geoDistance, geoContains } = window.d3;
 const { feature } = window.topojson;
 
 const DATEN = JSON.parse(document.getElementById('globus-daten').textContent);
@@ -80,6 +80,10 @@ addEventListener('touchmove', e => {
 addEventListener('keydown', e => {
   if (zustand !== 'start') return;
   if (['ArrowDown', 'PageDown', ' ', 'Enter'].includes(e.key) && e.target === document.body) { e.preventDefault(); starteFahrt(); }
+});
+// Mit der Tab-Taste aus dem Startbild in den Inhalt: Fahrt überspringen, sonst bliebe die Seite gesperrt
+document.addEventListener('focusin', e => {
+  if (zustand === 'start' && !buehne.contains(e.target) && buehne.compareDocumentPosition(e.target) & Node.DOCUMENT_POSITION_FOLLOWING) zumGlobus();
 });
 
 // ---------- 3D-Globus ----------
@@ -328,8 +332,57 @@ function zeigeLand(id) {
   karte.classList.add('offen');
   landwahl.value = id;
 }
-document.getElementById('schliessen').addEventListener('click', () => { karte.classList.remove('offen'); landwahl.value = ''; });
-landwahl.addEventListener('change', () => landwahl.value ? zeigeLand(landwahl.value) : karte.classList.remove('offen'));
+function schliesseKarte() { karte.classList.remove('offen'); landwahl.value = ''; }
+document.getElementById('schliessen').addEventListener('click', () => { schliesseKarte(); landwahl.focus(); });
+landwahl.addEventListener('change', () => landwahl.value ? zeigeLand(landwahl.value) : schliesseKarte());
+// Im Hochformat liegt die Karte als Blatt über der Seite: beim Wegscrollen von der Bühne schließen
+new IntersectionObserver(([e]) => { if (!e.isIntersecting && karte.classList.contains('offen')) schliesseKarte(); }).observe(buehne);
+// Esc schließt die Infokarte (Fokus bleibt in der Bühne)
+buehne.addEventListener('keydown', e => {
+  if (e.key !== 'Escape' || !karte.classList.contains('offen')) return;
+  const warDrin = karte.contains(document.activeElement);
+  schliesseKarte();
+  if (warDrin) landwahl.focus();
+});
+
+// ---------- Tastatur am Globus: Pfeiltasten drehen, Eingabetaste zeigt das Land in der Mitte ----------
+const meldung = document.getElementById('meldung');
+let meldungTimer;
+function zeigeMeldung(text) {
+  meldung.textContent = text;
+  meldung.classList.add('zeigen');
+  clearTimeout(meldungTimer);
+  meldungTimer = setTimeout(() => meldung.classList.remove('zeigen'), 2600);
+}
+// Die Tastatur wählt einen Punkt: ←/→ dreht den Globus (Längengrad vorne), ↑/↓ wandert nach Norden/Süden.
+// Start bei Europa; das Land am Punkt wird hervorgehoben und angesagt.
+let tastBreite = 50, tastLand = null;
+const laengeVorne = () => (((ziel ? ziel.lon : lon) + 540) % 360) - 180;
+function waehleMitTastatur() {
+  const punkt = [laengeVorne(), tastBreite];
+  tastLand = laender.find(f => geoContains(f, punkt)) || null;
+  hover = tastLand ? tastLand.id : null;
+  hoverUniform.value = tastLand ? laender.indexOf(tastLand) : -1;
+  if (tastLand) zeigeMeldung(`${landName(tastLand)} – ${T.mitte}`);
+}
+leinwand.addEventListener('focus', () => { if (zustand === 'globus' && leinwand.matches(':focus-visible')) waehleMitTastatur(); });
+leinwand.addEventListener('keydown', e => {
+  if (zustand !== 'globus') return;
+  const drehen = { ArrowLeft: -10, ArrowRight: 10 }[e.key], wandern = { ArrowUp: 10, ArrowDown: -10 }[e.key];
+  if (drehen !== undefined) {
+    e.preventDefault();
+    ziel = { lon: laengeVorne() + drehen, neig: NEIG };
+    waehleMitTastatur();
+  } else if (wandern !== undefined) {
+    e.preventDefault();
+    tastBreite = Math.max(-55, Math.min(75, tastBreite + wandern));
+    waehleMitTastatur();
+  } else if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    if (!tastLand) waehleMitTastatur();
+    if (tastLand && tastLand.id) zeigeLand(tastLand.id);
+  }
+});
 
 // ---------- Zeichnen ----------
 function schleife() {
@@ -369,5 +422,7 @@ if (ABGLEICH) {
   window.abgleich = { KUGEL, setze(x, y, r, l, n) { Object.assign(KUGEL, { x, y, r }); if (l != null) lon = l; if (n != null) neig = n; anordnen(); } };
 }
 
-// Schon unterwegs gewesen? Dann direkt zum Globus statt erneut zur Vogelperspektive
-try { if (sessionStorage.getItem('mp-besucht') && !ABGLEICH) { video.style.display = 'none'; zumGlobus(); } } catch (e) { /* ohne Speicher: Fahrt wird gezeigt */ }
+// Schon unterwegs gewesen oder „Bewegung reduzieren“ eingestellt? Dann direkt zum Globus statt zur Vogelperspektive
+let schonDa = false;
+try { schonDa = !!sessionStorage.getItem('mp-besucht'); } catch (e) { /* ohne Speicher: Fahrt wird gezeigt */ }
+if ((schonDa || matchMedia('(prefers-reduced-motion: reduce)').matches) && !ABGLEICH) { video.style.display = 'none'; zumGlobus(); }

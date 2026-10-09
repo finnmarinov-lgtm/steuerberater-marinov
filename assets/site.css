@@ -80,6 +80,8 @@ a:hover { color: var(--tinte); }
 .suche-form input::placeholder { color: var(--leiste-text); opacity: .8; }
 .suche-form button { border: 0; background: transparent; color: var(--leiste-link); display: grid; place-items: center; width: 28px; height: 28px; cursor: pointer; }
 .suche-form button:hover { background: var(--leiste-hover); }
+/* Fokusrahmen nach innen, sonst schneidet ihn der Rahmen des Suchfelds ab */
+.suche-form input:focus-visible, .suche-form button:focus-visible { outline-offset: -3px; }
 
 /* Darstellung: Farbschema und Schriftgröße */
 .darstellung { position: relative; }
@@ -98,6 +100,7 @@ a:hover { color: var(--tinte); }
 @media (max-width: 900px) { .suche-form input { display: none; } .suche-form { border: 0; } }
 @media (max-width: 720px) {
   .schnell span, .leiste-oben .vorschau-hinweis { display: none; }
+  .schnell { min-width: 36px; min-height: 36px; justify-content: center; } /* nur noch Symbol: genug Fläche zum Tippen */
   .leiste-oben-innen { gap: 1rem; }
 }
 @media (max-width: 560px) {
@@ -110,7 +113,7 @@ a:hover { color: var(--tinte); }
 /* ---------- Kopf: Marke, Hauptmenü, Kontakt-Knopf, Menü für schmale Bildschirme */
 .kopf { position: relative; z-index: 10; height: var(--kopf); display: flex; align-items: center; gap: 1.5rem;
   padding: 0 clamp(16px, 4vw, 48px); background: var(--flaeche); border-bottom: 1px solid var(--linie); }
-.marke { display: flex; align-items: baseline; gap: .55rem; color: var(--tinte); text-decoration: none; white-space: nowrap; }
+.marke { display: flex; align-items: baseline; gap: .55rem; padding: .4rem 0; color: var(--tinte); text-decoration: none; white-space: nowrap; }
 .marke-name { font: 500 1.35rem/1 var(--serif); letter-spacing: .005em; }
 .marke-zusatz { font-size: .9rem; color: var(--schiefer); }
 .hauptnav { margin-left: auto; }
@@ -145,6 +148,7 @@ a:hover { color: var(--tinte); }
   background: #dcdcda url(../medien/anfang.jpg?v=2) no-repeat; background-size: cover; background-position: var(--bildpos); }
 #fahrt { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: var(--bildpos); transition: opacity 1.4s cubic-bezier(.4, 0, .2, 1); }
 #globus { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 1.4s cubic-bezier(.4, 0, .2, 1); touch-action: none; }
+#globus:focus-visible { outline-offset: -4px; }
 #ringvorne { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0; transition: opacity 1.4s cubic-bezier(.4, 0, .2, 1); }
 #buehne.globus #fahrt { opacity: 0; }
 #buehne.globus #globus, #buehne.globus #ringvorne { opacity: 1; }
@@ -163,7 +167,7 @@ a:hover { color: var(--tinte); }
 .startseite .knopf { font: inherit; border: 0; border-radius: 4px; padding: .7rem 1.3rem; cursor: pointer;
   background: var(--tinte); color: #fff; text-decoration: none; display: inline-block; }
 .startseite .knopf.hell { background: rgba(255, 255, 255, .85); color: var(--tinte); box-shadow: 0 4px 18px rgba(0, 0, 0, .08); }
-#los { position: absolute; bottom: 7%; left: 50%; transform: translateX(-50%); transition: opacity .4s; }
+#los { position: absolute; bottom: 7%; left: 50%; transform: translateX(-50%); transition: opacity .4s; width: max-content; max-width: calc(100% - 32px); }
 #los span { display: inline-block; animation: wippen 1.8s ease-in-out infinite; }
 @keyframes wippen { 50% { transform: translateY(4px); } }
 #buehne:not(.start) #los { opacity: 0; pointer-events: none; }
@@ -173,8 +177,8 @@ a:hover { color: var(--tinte); }
 .startseite .leiste { position: absolute; left: 50%; bottom: 22px; transform: translateX(-50%); display: flex; gap: .6rem; align-items: center;
   opacity: 0; pointer-events: none; transition: opacity .5s .3s; flex-wrap: wrap; justify-content: center; width: calc(100% - 32px); }
 #buehne.globus .leiste { opacity: 1; pointer-events: auto; }
-.startseite .leiste .hinweis { background: rgba(255, 255, 255, .85); border-radius: 4px; padding: .6rem 1rem; font-size: .92rem; color: var(--grau); }
-.startseite select { font: inherit; padding: .6rem .9rem; border-radius: 4px; border: 1px solid #c9ccce; background: #fff; color: var(--tinte); }
+.startseite .leiste .hinweis { background: rgba(255, 255, 255, .92); border-radius: 4px; padding: .6rem 1rem; font-size: .92rem; color: var(--grau); }
+.startseite select { font: inherit; padding: .6rem .9rem; border-radius: 4px; border: 1px solid #c9ccce; background: #fff; color: var(--tinte); max-width: 100%; }
 
 #infokarte { position: absolute; left: clamp(16px, 5vw, 72px); top: 50%; transform: translate(-16px, -50%); width: min(420px, calc(100% - 32px));
   background: var(--karte); backdrop-filter: blur(10px); border-radius: 6px; box-shadow: var(--schatten); padding: 1.6rem 1.6rem 1.3rem;
@@ -186,16 +190,31 @@ a:hover { color: var(--tinte); }
 #infokarte .sprache { font-size: .9rem; color: var(--grau); margin: 0 0 1.1rem; }
 #infokarte .bg { font-style: italic; }
 #infokarte .aktionen { display: flex; gap: .5rem; flex-wrap: wrap; }
+/* Anrufen / E-Mail bleiben am unteren Kartenrand sichtbar, auch wenn die Liste länger ist */
+#infokarte .aktionen { position: sticky; bottom: -1.3rem; margin: 0 -1.6rem -1.3rem; padding: .8rem 1.6rem 1.3rem; background: var(--karte); border-radius: 0 0 6px 6px; }
 #schliessen { position: absolute; top: 10px; right: 12px; border: 0; background: none; font-size: 1.5rem; cursor: pointer; color: var(--grau); }
 #meldung { position: absolute; top: 24px; left: 50%; transform: translateX(-50%); background: var(--tinte); color: #fff; padding: .55rem 1rem;
   border-radius: 999px; font-size: .9rem; opacity: 0; transition: opacity .3s; pointer-events: none; }
 #meldung.zeigen { opacity: .92; }
 
-/* Hochformat: der Globus sitzt im Video rechts, Ausschnitt dorthin schieben; Infokarte unten */
-@media (max-width: 700px) {
-  #buehne { --bildpos: 72% 50%; }
-  #infokarte { top: auto; bottom: 90px; transform: translateY(16px); }
+/* Hochformat (Handy, Tablet hochkant): Bühne höchstens 1,4 × so hoch wie breit, damit die Kugel ganz ins Bild passt;
+   Ausschnitt auf den Globus zentriert (er sitzt im Video rechts); Infokarte als Blatt von unten */
+@media (orientation: portrait) {
+  #buehne { --bildpos: 78% 50%; height: min(calc(100vh - var(--kopf) - var(--oben)), 140vw); height: min(calc(100svh - var(--kopf) - var(--oben)), 140vw); }
+  #globus { touch-action: pan-y; } /* senkrecht wischen blättert die Seite, waagerecht dreht den Globus */
+  .startseite .titel { top: 5%; padding: 1.1rem 1.2rem; }
+  .startseite .leiste { bottom: 14px; }
+  #infokarte { position: fixed; z-index: 40; left: 0; right: 0; top: auto; bottom: 0; margin: 0 auto; width: min(100%, 560px); max-height: min(62vh, 520px);
+    border-radius: 12px 12px 0 0; padding: 1.3rem 1.2rem 0; transform: translateY(100%); box-shadow: 0 -12px 40px rgba(0, 0, 0, .28); }
   #infokarte.offen { transform: none; }
+  #infokarte h2 { font-size: 1.5rem; padding-right: 2.6rem; }
+  #schliessen { top: 6px; right: 6px; width: 44px; height: 44px; font-size: 1.7rem; }
+  #infokarte ul { margin-bottom: .8rem; line-height: 1.45; }
+  #infokarte li + li { margin-top: .25rem; }
+  /* Anrufen / E-Mail bleiben am unteren Rand sichtbar, auch wenn die Liste länger ist */
+  #infokarte .aktionen { position: sticky; bottom: 0; margin: 0 -1.2rem; padding: .8rem 1.2rem calc(.9rem + env(safe-area-inset-bottom));
+    background: var(--flaeche); border-top: 1px solid var(--linie); }
+  #infokarte .aktionen .knopf { flex: 1 1 auto; text-align: center; }
 }
 
 .start-inhalt { max-width: 1120px; margin: 0 auto; padding: clamp(72px, 10vw, 136px) clamp(16px, 4vw, 48px) 32px; }
@@ -272,7 +291,7 @@ a:hover { color: var(--tinte); }
 .text h1 { font: 400 clamp(2.1rem, 4.4vw, 3.2rem)/1.1 var(--serif); margin: 0 0 2.6rem; padding-bottom: 1.6rem; border-bottom: 1px solid var(--linie); letter-spacing: -.005em; }
 .text h2 { font: 400 1.6rem/1.25 var(--serif); margin: 3.6rem 0 1.1rem; padding-top: 2rem; border-top: 1px solid var(--linie); }
 .text h1 + h2, .text h1 + .portrait + h2 { margin-top: 0; padding-top: 0; border-top: 0; }
-.text h3 { font: 600 1rem/1.4 var(--sans); margin: 2.8rem 0 .9rem; letter-spacing: .01em; color: var(--tinte); }
+.text h3, .text h2.stufe3 { font: 600 1rem/1.4 var(--sans); margin: 2.8rem 0 .9rem; padding-top: 0; border-top: 0; letter-spacing: .01em; color: var(--tinte); }
 .text p { margin: 0 0 1.35rem; }
 .text ul { margin: 0 0 2rem; padding-left: 1.2rem; }
 .text li { margin: .55rem 0; padding-left: .2rem; }
@@ -323,7 +342,7 @@ a:hover { color: var(--tinte); }
   .reisebild { display: none; }
   .unternav { margin-bottom: 2rem; }
   .unternav ul { display: flex; flex-wrap: wrap; gap: .4rem; border: 0; }
-  .unternav a { border: 1px solid var(--linie); border-radius: 3px; padding: .55rem 0 .55rem 1.1rem; margin: 0; background: var(--flaeche); }
+  .unternav a { border: 1px solid var(--linie); border-radius: 3px; padding: .45rem .85rem; margin: 0; background: var(--flaeche); font-size: .92rem; }
 }
 @media (max-width: 560px) {
   .seite { padding-top: 40px; }
@@ -342,7 +361,7 @@ a:hover { color: var(--tinte); }
 .treffer li { margin: 0; padding: 1.1rem 0; border-bottom: 1px solid var(--linie); }
 .treffer a { font: 500 1.15rem/1.35 var(--serif); }
 .treffer p { margin: .35rem 0 0; color: var(--schiefer); font-size: .95rem; }
-.treffer mark { background: color-mix(in srgb, var(--blau) 25%, transparent); color: inherit; padding: 0 .1em; border-radius: 2px; }
+.treffer mark { background: color-mix(in srgb, var(--blau) 25%, transparent); color: var(--tinte); padding: 0 .1em; border-radius: 2px; }
 
 /* ---------- Fuß */
 .fuss { background: var(--fuss-bg); color: #dfe5ea; margin-top: 96px; }

@@ -7,6 +7,7 @@
   const d = ziel.dataset;
   const q = new URLSearchParams(location.search).get('q') || '';
   feld.value = q;
+  if (!q.trim()) feld.focus(); // ohne Suchbegriff (z. B. Lupe am Handy): gleich ins Suchfeld
   const esc = s => s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const klein = s => s.toLocaleLowerCase(document.documentElement.lang);
 

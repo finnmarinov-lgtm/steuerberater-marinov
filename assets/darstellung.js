@@ -19,6 +19,19 @@
   document.addEventListener('click', e => {
     for (const det of document.querySelectorAll('.darstellung[open], .menue[open]')) if (!det.contains(e.target)) det.open = false;
   });
+  // Esc schließt Menü und Darstellungsfeld, der Fokus geht zurück auf den Knopf
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    for (const det of document.querySelectorAll('.darstellung[open], .menue[open]')) {
+      const warDrin = det.contains(document.activeElement);
+      det.open = false;
+      if (warDrin) det.querySelector('summary').focus();
+    }
+  });
+  // Mit der Tab-Taste aus dem offenen Menü hinaus: Menü schließen
+  document.addEventListener('focusin', e => {
+    for (const det of document.querySelectorAll('.darstellung[open], .menue[open]')) if (!det.contains(e.target)) det.open = false;
+  });
 })();
 
 // Zufälliges Reisefoto in der Seitenleiste (wie auf der alten Seite)
