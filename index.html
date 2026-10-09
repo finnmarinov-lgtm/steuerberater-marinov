@@ -379,7 +379,7 @@ function maleTextur() {
   tctx.fillStyle = '#f2f2f0';
   tctx.fillRect(0, 0, 4096, 2048);
   for (const f of laender) {
-    const aktiv = f.id in LAENDER;
+    const aktiv = f.id in LAENDER || f.id === '840'; // USA zusätzlich hervorgehoben
     tctx.beginPath(); pfad(f);
     tctx.fillStyle = aktiv ? '#2f5d8a' : '#a4a7a9';
     tctx.fill();

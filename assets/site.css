@@ -385,3 +385,22 @@ html[data-schrift="gross"] { font-size: 112.5%; }
 .reisen-streifen li { scroll-snap-align: start; }
 .reisen-streifen figure { margin: 0; }
 .reisen-streifen img { display: block; width: 168px; height: 224px; object-fit: cover; border-radius: 2px; background: var(--wand); }
+
+/* ---------- Neuigkeiten-Spalte rechts (wie auf der alten Seite) */
+.seite.mit-news { max-width: 1400px; display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: clamp(32px, 4vw, 72px); align-items: start; }
+.seite.mit-news.mit-unternav { grid-template-columns: 210px minmax(0, 1fr) 270px; }
+.news-seite { position: sticky; top: 32px; padding-left: 1.6rem; border-left: 1px solid var(--linie); }
+.news-seite h2 { font: 400 1.3rem/1.25 var(--serif); margin: 0 0 1rem; }
+.news-kompakt { list-style: none; margin: 0; padding: 0; }
+.news-kompakt li { padding: .75rem 0; border-bottom: 1px solid var(--linie); display: flex; flex-direction: column; gap: .2rem; }
+.news-kompakt li:first-child { padding-top: 0; }
+.news-kompakt time { font-size: .8rem; color: var(--schiefer); }
+.news-kompakt a { font-size: .92rem; line-height: 1.45; color: var(--tinte); text-decoration: none; }
+.news-kompakt a:hover { color: var(--blau); text-decoration: underline; }
+.news-quelle { font-size: .8rem; color: var(--schiefer); margin: .9rem 0 0; }
+@media (max-width: 1180px) {
+  .seite.mit-news { grid-template-columns: minmax(0, 1fr); }
+  .seite.mit-news.mit-unternav { grid-template-columns: 210px minmax(0, 1fr); }
+  .news-seite { position: static; grid-column: 1 / -1; border-left: 0; padding: 2rem 0 0; border-top: 1px solid var(--linie); max-width: 70ch; }
+}
+@media (max-width: 820px) { .seite.mit-news.mit-unternav { display: block; } }
