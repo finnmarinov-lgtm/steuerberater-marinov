@@ -20,3 +20,12 @@
     for (const det of document.querySelectorAll('.darstellung[open], .menue[open]')) if (!det.contains(e.target)) det.open = false;
   });
 })();
+
+// Zufälliges Reisefoto in der Seitenleiste (wie auf der alten Seite)
+for (const fig of document.querySelectorAll('[data-reisen]')) {
+  const liste = fig.dataset.reisen.split('|').map(e => e.split('~'));
+  const [datei, name] = liste[Math.floor(Math.random() * liste.length)];
+  const img = fig.querySelector('img');
+  img.src = fig.dataset.wurzel + datei; img.alt = name;
+  fig.querySelector('figcaption').textContent = name;
+}

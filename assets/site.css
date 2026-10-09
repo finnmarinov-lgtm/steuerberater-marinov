@@ -369,3 +369,19 @@ html[data-schrift="gross"] { font-size: 112.5%; }
 .news-liste a { color: var(--tinte); text-decoration: none; }
 .news-liste a:hover { color: var(--blau); text-decoration: underline; }
 @media (max-width: 600px) { .news-liste li { grid-template-columns: 1fr; } }
+
+/* ---------- Reisefotos */
+.seitenleiste { position: sticky; top: 32px; }
+.seitenleiste .unternav { position: static; }
+.reisebild { margin: 2rem 0 0; }
+.reisebild img { display: block; width: 100%; max-width: 220px; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 2px; background: var(--wand); }
+.reisebild figcaption, .reisen figcaption { font-size: .85rem; color: var(--schiefer); margin-top: .45rem; }
+@media (max-width: 820px) { .seitenleiste { position: static; } .reisebild { display: none; } }
+.reisen { margin-top: clamp(80px, 11vw, 136px); }
+.reisen h2 { font: 400 1.75rem/1.2 var(--serif); margin: 0 0 .5rem; }
+.reisen > p { max-width: 62ch; color: var(--schiefer); margin: 0 0 1.6rem; }
+.reisen-streifen { list-style: none; margin: 0; padding: 0 0 .8rem; display: grid; grid-auto-flow: column; grid-auto-columns: 168px; gap: 1rem;
+  overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; }
+.reisen-streifen li { scroll-snap-align: start; }
+.reisen-streifen figure { margin: 0; }
+.reisen-streifen img { display: block; width: 168px; height: 224px; object-fit: cover; border-radius: 2px; background: var(--wand); }
