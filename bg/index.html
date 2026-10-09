@@ -188,7 +188,7 @@ const holen = (url, n = 3) => fetch(url).then(r => r.ok ? r : Promise.reject(new
 
 // Lage der Kugel im letzten Videobild (Video 1280x712, Pixel)
 const VIDEO = { b: 1280, h: 734 };
-const KUGEL = { x: 855, y: 327, r: 204 };
+const KUGEL = { x: 854, y: 327, r: 206 };
 const ABGLEICH = new URLSearchParams(location.search).has('abgleich');
 
 const LAENDER = {
@@ -414,7 +414,7 @@ function anordnen() {
   const ox = (B - VIDEO.b * s) * posX, oy = (H - VIDEO.h * s) / 2;
   lage = { x: ox + KUGEL.x * s, y: oy + KUGEL.y * s, r: KUGEL.r * s + 1.5 };
   neigung.position.set(lage.x - B / 2, H / 2 - lage.y, 0);
-  neigung.scale.set(lage.r * 0.98, lage.r, lage.r); // Kugel im Video ist minimal schmaler als hoch
+  neigung.scale.set(lage.r, lage.r, lage.r); // Kugel im Video ist minimal schmaler als hoch
   zeichneRingVorne(s, ox, oy);
 }
 addEventListener('resize', anordnen);
