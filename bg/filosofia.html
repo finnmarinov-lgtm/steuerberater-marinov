@@ -5,23 +5,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Философия – Marinov &amp; Partner Steuerberater</title>
+<script>/* Darstellung vor dem ersten Zeichnen setzen: Standard dunkel */
+(function () { var f = 'dunkel', s = 'normal', d = document.documentElement;
+  try { f = localStorage.getItem('mp-farbe') || f; s = localStorage.getItem('mp-schrift') || s; } catch (e) {}
+  d.dataset.wahl = f; d.dataset.schrift = s;
+  d.dataset.theme = f === 'system' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dunkel' : 'hell') : f; })();</script>
 <link rel="stylesheet" href="../assets/site.css">
 <link rel="alternate" hreflang="de" href="../philosophie.html"><link rel="alternate" hreflang="en" href="../en/philosophy.html"><link rel="alternate" hreflang="bg" href="../bg/filosofia.html">
 
 </head>
 <body>
 <a class="springen" href="#inhalt">Към съдържанието</a>
+<div class="leiste-oben">
+  <div class="leiste-oben-innen">
+    <a href="tel:+4934066149624" class="schnell"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>+49 340 661496-24</span></a>
+    <a href="mailto:info@steuerberater-marinov.de" class="schnell"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m3.5 6 8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span>info@steuerberater-marinov.de</span></a>
+    <a class="vorschau-hinweis" href="#vorschau">Преглед</a>
+    <span class="leiste-oben-rechts">
+      <details class="darstellung">
+    <summary aria-label="Изглед" title="Изглед"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg></summary>
+    <div class="darstellung-feld">
+      <fieldset><legend>Цветова схема</legend><label><input type="radio" name="farbe" value="dunkel"> Тъмна</label><label><input type="radio" name="farbe" value="hell"> Светла</label><label><input type="radio" name="farbe" value="system"> Като устройството</label></fieldset>
+      <fieldset><legend>Размер на текста</legend><label><input type="radio" name="schrift" value="normal"> Нормален</label><label><input type="radio" name="schrift" value="gross"> Голям</label></fieldset>
+    </div>
+  </details>
+      <nav class="sprachen" aria-label="Език"><a href="../philosophie.html" hreflang="de" lang="de" title="Deutsch">DE</a><a href="../en/philosophy.html" hreflang="en" lang="en" title="English">EN</a><a href="../bg/filosofia.html" hreflang="bg" lang="bg" title="Български" aria-current="true">BG</a></nav>
+    </span>
+  </div>
+</div>
 <header class="kopf">
   <a class="marke" href="../bg/index.html"><span class="marke-name">Marinov &amp; Partner</span><span class="marke-zusatz">Данъчни консултанти</span></a>
-  <a class="vorschau-hinweis" href="#vorschau">Преглед</a>
-  <nav class="hauptnav" aria-label="Меню"><ul><li><a href="../bg/kantora.html" aria-current="page">Кантора</a></li><li><a href="../bg/uslugi.html">Услуги</a></li><li><a href="../bg/honorari.html">Хонорари</a></li><li><a href="../bg/kariera.html">Кариера</a></li><li><a href="../bg/linkove.html">Линкове</a></li><li><a href="#kontakt">Контакт</a></li></ul></nav>
-  <details class="menue"><summary>Меню</summary><ul><li><a href="../bg/kantora.html" aria-current="page">Кантора</a></li><li><a href="../bg/uslugi.html">Услуги</a></li><li><a href="../bg/honorari.html">Хонорари</a></li><li><a href="../bg/kariera.html">Кариера</a></li><li><a href="../bg/linkove.html">Линкове</a></li><li><a href="#kontakt">Контакт</a></li><li class="menue-sprachen"><a href="../philosophie.html" hreflang="de" lang="de" title="Deutsch">DE</a><a href="../en/philosophy.html" hreflang="en" lang="en" title="English">EN</a><a href="../bg/filosofia.html" hreflang="bg" lang="bg" title="Български" aria-current="true">BG</a></li></ul></details>
-  <nav class="sprachen" aria-label="Език"><a href="../philosophie.html" hreflang="de" lang="de" title="Deutsch">DE</a><a href="../en/philosophy.html" hreflang="en" lang="en" title="English">EN</a><a href="../bg/filosofia.html" hreflang="bg" lang="bg" title="Български" aria-current="true">BG</a></nav>
+  <nav class="hauptnav" aria-label="Меню"><ul><li><a href="../bg/kantora.html" aria-current="page">Кантора</a></li><li><a href="../bg/uslugi.html">Услуги</a></li><li><a href="../bg/honorari.html">Хонорари</a></li><li><a href="../bg/kariera.html">Кариера</a></li><li><a href="../bg/linkove.html">Линкове</a></li></ul></nav>
+  <a class="kontakt-knopf" href="#kontakt">Свържете се с нас</a>
+  <details class="menue"><summary>Меню</summary><ul><li><a href="../bg/kantora.html" aria-current="page">Кантора</a></li><li><a href="../bg/uslugi.html">Услуги</a></li><li><a href="../bg/honorari.html">Хонорари</a></li><li><a href="../bg/kariera.html">Кариера</a></li><li><a href="../bg/linkove.html">Линкове</a></li><li><a href="#kontakt">Контакт</a></li></ul></details>
 </header>
 <main id="inhalt">
 <div class="seite mit-unternav">
   <nav class="unternav" aria-label="Страници в този раздел"><ul><li><a href="../bg/kantora.html">Кантора</a></li><li><a href="../bg/filosofia.html" aria-current="page">Философия</a></li><li><a href="../bg/upraviteli.html">Управители</a></li></ul></nav>
   <article class="text">
+    <nav class="krumen" aria-label="Вие сте тук"><a href="../bg/index.html">Начало</a><span aria-hidden="true">›</span><a href="../bg/kantora.html">Кантора</a><span aria-hidden="true">›</span><span aria-current="page">Философия</span></nav>
     <h1>Философия</h1>
     <h3>Бихме желали да допринесем за Вашия успех чрез високо качество</h3>
 <p>Критерий за постигнатото от нас са Вашето <strong>удовлетворение</strong> и Вашия успех. През годините на консултантска дейност за фирми и физически лица от различни държави и браншове, както и на съвместна работа с чуждестранни консултанти нашият екип е развил силно <strong>самосъзнание за работа в услуга на клиента</strong>. Ние сме фирма, която преди всичко предлага услуги и отдаваме много голямо значение на <strong>начина по който Ви</strong> консултираме и обслужваме.</p>
@@ -38,6 +60,7 @@
 <p>Предлагаме Ви помощ при международни данъчни въпроси чрез широка мрежа от международни данъчни консултанти в България и в много други държави. Нашите партньори са също така специализирани в областта на международното данъчно право.</p>
 <h3>Вашите нужди диктуват нашите услуги</h3>
 <p>Определяме нашите хонорари според <strong>индивидуалната</strong> нужда от консултация на всеки отделен клиент. Най-важна в случая е прозрачността. Начисляваме таксите според времето за обработка и постигнатите договорености.</p>
+    
   </article>
 </div>
 </main>
@@ -63,6 +86,7 @@
   </div>
   <p class="vorschau-text" id="vorschau">Това е предварителен преглед на новия сайт. Официалният сайт е <a href="https://www.steuerberater-marinov.de">steuerberater-marinov.de</a>.</p>
 </footer>
+<script src="../assets/darstellung.js" defer></script>
 
 </body>
 </html>

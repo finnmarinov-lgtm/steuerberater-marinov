@@ -5,23 +5,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Datenschutzerklärung – Marinov &amp; Partner Steuerberater</title>
+<script>/* Darstellung vor dem ersten Zeichnen setzen: Standard dunkel */
+(function () { var f = 'dunkel', s = 'normal', d = document.documentElement;
+  try { f = localStorage.getItem('mp-farbe') || f; s = localStorage.getItem('mp-schrift') || s; } catch (e) {}
+  d.dataset.wahl = f; d.dataset.schrift = s;
+  d.dataset.theme = f === 'system' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dunkel' : 'hell') : f; })();</script>
 <link rel="stylesheet" href="assets/site.css">
 <link rel="alternate" hreflang="de" href="datenschutz.html"><link rel="alternate" hreflang="en" href="en/privacy.html"><link rel="alternate" hreflang="bg" href="bg/privacy.html">
 
 </head>
 <body>
 <a class="springen" href="#inhalt">Zum Inhalt springen</a>
+<div class="leiste-oben">
+  <div class="leiste-oben-innen">
+    <a href="tel:+4934066149624" class="schnell"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z" fill="currentColor"/></svg><span>+49 340 661496-24</span></a>
+    <a href="mailto:info@steuerberater-marinov.de" class="schnell"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m3.5 6 8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span>info@steuerberater-marinov.de</span></a>
+    <a class="vorschau-hinweis" href="#vorschau">Vorschau</a>
+    <span class="leiste-oben-rechts">
+      <details class="darstellung">
+    <summary aria-label="Darstellung" title="Darstellung"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg></summary>
+    <div class="darstellung-feld">
+      <fieldset><legend>Farbschema</legend><label><input type="radio" name="farbe" value="dunkel"> Dunkel</label><label><input type="radio" name="farbe" value="hell"> Hell</label><label><input type="radio" name="farbe" value="system"> Wie Gerät</label></fieldset>
+      <fieldset><legend>Schriftgröße</legend><label><input type="radio" name="schrift" value="normal"> Normal</label><label><input type="radio" name="schrift" value="gross"> Groß</label></fieldset>
+    </div>
+  </details>
+      <nav class="sprachen" aria-label="Sprache"><a href="datenschutz.html" hreflang="de" lang="de" title="Deutsch" aria-current="true">DE</a><a href="en/privacy.html" hreflang="en" lang="en" title="English">EN</a><a href="bg/privacy.html" hreflang="bg" lang="bg" title="Български">BG</a></nav>
+    </span>
+  </div>
+</div>
 <header class="kopf">
   <a class="marke" href="index.html"><span class="marke-name">Marinov &amp; Partner</span><span class="marke-zusatz">Steuerberater</span></a>
-  <a class="vorschau-hinweis" href="#vorschau">Vorschau</a>
-  <nav class="hauptnav" aria-label="Menü"><ul><li><a href="kanzlei.html">Kanzlei</a></li><li><a href="beratung.html">Beratung</a></li><li><a href="gebuehren.html">Gebühren</a></li><li><a href="karriere.html">Karriere</a></li><li><a href="links.html">Links</a></li><li><a href="#kontakt">Kontakt</a></li></ul></nav>
-  <details class="menue"><summary>Menü</summary><ul><li><a href="kanzlei.html">Kanzlei</a></li><li><a href="beratung.html">Beratung</a></li><li><a href="gebuehren.html">Gebühren</a></li><li><a href="karriere.html">Karriere</a></li><li><a href="links.html">Links</a></li><li><a href="#kontakt">Kontakt</a></li><li class="menue-sprachen"><a href="datenschutz.html" hreflang="de" lang="de" title="Deutsch" aria-current="true">DE</a><a href="en/privacy.html" hreflang="en" lang="en" title="English">EN</a><a href="bg/privacy.html" hreflang="bg" lang="bg" title="Български">BG</a></li></ul></details>
-  <nav class="sprachen" aria-label="Sprache"><a href="datenschutz.html" hreflang="de" lang="de" title="Deutsch" aria-current="true">DE</a><a href="en/privacy.html" hreflang="en" lang="en" title="English">EN</a><a href="bg/privacy.html" hreflang="bg" lang="bg" title="Български">BG</a></nav>
+  <nav class="hauptnav" aria-label="Menü"><ul><li><a href="kanzlei.html">Kanzlei</a></li><li><a href="beratung.html">Beratung</a></li><li><a href="gebuehren.html">Gebühren</a></li><li><a href="karriere.html">Karriere</a></li><li><a href="links.html">Links</a></li></ul></nav>
+  <a class="kontakt-knopf" href="#kontakt">Kontakt aufnehmen</a>
+  <details class="menue"><summary>Menü</summary><ul><li><a href="kanzlei.html">Kanzlei</a></li><li><a href="beratung.html">Beratung</a></li><li><a href="gebuehren.html">Gebühren</a></li><li><a href="karriere.html">Karriere</a></li><li><a href="links.html">Links</a></li><li><a href="#kontakt">Kontakt</a></li></ul></details>
 </header>
 <main id="inhalt">
 <div class="seite">
   
   <article class="text">
+    <nav class="krumen" aria-label="Sie sind hier"><a href="index.html">Start</a><span aria-hidden="true">›</span><span aria-current="page">Datenschutzerklärung</span></nav>
     <h1>Datenschutzerklärung</h1>
     <p>Wir freuen uns sehr über Ihr Interesse an unserem Unternehmen. Datenschutz hat einen besonders hohen Stellenwert für die Geschäftsleitung der Marinov &amp; Partner Steuerberater. Eine Nutzung der Internetseiten der Marinov &amp; Partner Steuerberater ist grundsätzlich ohne jede Angabe personenbezogener Daten möglich. Sofern eine betroffene Person besondere Services unseres Unternehmens über unsere Internetseite in Anspruch nehmen möchte, könnte jedoch eine Verarbeitung personenbezogener Daten erforderlich werden. Ist die Verarbeitung personenbezogener Daten erforderlich und besteht für eine solche Verarbeitung keine gesetzliche Grundlage, holen wir generell eine Einwilligung der betroffenen Person ein.</p>
 <p>Die Verarbeitung personenbezogener Daten, beispielsweise des Namens, der Anschrift, E-Mail-Adresse oder Telefonnummer einer betroffenen Person, erfolgt stets im Einklang mit der Datenschutz-Grundverordnung und in Übereinstimmung mit den für die Marinov &amp; Partner Steuerberater geltenden landesspezifischen Datenschutzbestimmungen. Mittels dieser Datenschutzerklärung möchte unser Unternehmen die Öffentlichkeit über Art, Umfang und Zweck der von uns erhobenen, genutzten und verarbeiteten personenbezogenen Daten informieren. Ferner werden betroffene Personen mittels dieser Datenschutzerklärung über die ihnen zustehenden Rechte aufgeklärt.</p>
@@ -137,6 +159,7 @@
 <h2>12. Bestehen einer automatisierten Entscheidungsfindung</h2>
 <p>Als verantwortungsbewusstes Unternehmen verzichten wir auf eine automatische Entscheidungsfindung oder ein Profiling.</p>
 <p>Diese Datenschutzerklärung wurde durch den Datenschutzerklärungs-Generator der DGD Deutsche Gesellschaft für Datenschutz GmbH, die als <a href="https://dg-datenschutz.de/datenschutz-dienstleistungen/externer-datenschutzbeauftragter/">Datenschutzbeauftragter</a>tätig ist, in Kooperation mit den Datenschutz Anwälten der Kanzlei WILDE BEUGER SOLMECKE | <a href="https://www.wbs-law.de/it-recht/datenschutzrecht/">Rechtsanwälte</a>erstellt.</p>
+    
   </article>
 </div>
 </main>
@@ -162,6 +185,7 @@
   </div>
   <p class="vorschau-text" id="vorschau">Dies ist eine Vorschau der neuen Webseite. Die offizielle Seite ist <a href="https://www.steuerberater-marinov.de">steuerberater-marinov.de</a>.</p>
 </footer>
+<script src="assets/darstellung.js" defer></script>
 
 </body>
 </html>
