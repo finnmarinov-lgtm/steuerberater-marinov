@@ -1,4 +1,2 @@
 User-agent: *
-Allow: /
-
-Sitemap: https://steuerberater-marinov.de/sitemap.xml
+Disallow: /
