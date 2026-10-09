@@ -209,3 +209,23 @@ body { line-height: 1.72; }
 .fuss { margin-top: 96px; }
 .fuss-innen { padding-top: 72px; padding-bottom: 48px; gap: 3.5rem; }
 .wege { gap: .45rem 1.2rem; }
+
+/* Schmale Bildschirme: Silbentrennung, kompakter Kopf */
+.text, .gruss, .gruppen-liste, .fuss { hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word; }
+@media (max-width: 560px) {
+  .kopf { padding: 0 16px; gap: .5rem; }
+  .vorschau-hinweis { display: none; }
+  .marke-name { font-size: 1.12rem; }
+  .menue { margin-left: auto; }
+  .menue summary { padding: .35rem .6rem; }
+  .sprachen a { padding: .2rem .28rem; font-size: .8rem; }
+  .text h1 { font-size: 2rem; }
+  .seite { padding-top: 40px; }
+}
+.menue-sprachen { display: none; }
+@media (max-width: 400px) {
+  .sprachen { display: none; }
+  .menue-sprachen { display: flex; gap: .3rem; padding: .5rem 1rem; border-top: 1px solid var(--linie); margin-top: .3rem; }
+  .menue-sprachen a { display: inline-block; padding: .2rem .4rem; }
+  .menue-sprachen a[aria-current="true"] { color: var(--bordeaux); font-weight: 600; }
+}
