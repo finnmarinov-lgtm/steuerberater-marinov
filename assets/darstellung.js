@@ -29,3 +29,6 @@ for (const fig of document.querySelectorAll('[data-reisen]')) {
   img.src = fig.dataset.wurzel + datei; img.alt = name;
   fig.querySelector('figcaption').textContent = name;
 }
+
+// Merken, dass jemand auf der Seite unterwegs ist (für die Startseite: dann direkt zum Globus)
+if (!document.body.classList.contains('startseite')) { try { sessionStorage.setItem('mp-besucht', '1'); } catch (e) { /* ohne Speicher: Fahrt wird gezeigt */ } }

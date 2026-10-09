@@ -277,6 +277,7 @@ function abbremsen() {
   requestAnimationFrame(abbremsen);
 }
 function zumGlobus() {
+  try { sessionStorage.setItem('mp-besucht', '1'); } catch (e) {}
   if (zustand === 'globus') return;
   if (!video.ended) video.pause();
   buehne.style.backgroundImage = 'url(../medien/ende.jpg?v=2)'; // Hintergrund = letztes Videobild
@@ -573,6 +574,9 @@ if (ABGLEICH) {
   leinwand.style.opacity = '0.55';
   window.abgleich = { KUGEL, setze(x, y, r, l, n) { Object.assign(KUGEL, { x, y, r }); if (l != null) lon = l; if (n != null) neig = n; anordnen(); } };
 }
+
+// Schon unterwegs gewesen? Dann direkt zum Globus statt erneut zur Vogelperspektive
+try { if (sessionStorage.getItem('mp-besucht') && !ABGLEICH) { video.style.display = 'none'; zumGlobus(); } } catch (e) {}
 </script>
 </body>
 </html>
