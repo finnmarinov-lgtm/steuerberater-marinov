@@ -404,3 +404,8 @@ html[data-schrift="gross"] { font-size: 112.5%; }
   .news-seite { position: static; grid-column: 1 / -1; border-left: 0; padding: 2rem 0 0; border-top: 1px solid var(--linie); max-width: 70ch; }
 }
 @media (max-width: 820px) { .seite.mit-news.mit-unternav { display: block; } }
+
+/* Aufklappbare Leistungen blau wie die Links der alten Seite */
+.leistungen summary { color: var(--blau); }
+.leistungen summary:hover { color: var(--tinte); text-decoration: underline; text-underline-offset: .18em; }
+.leistungen details[open] summary { color: var(--tinte); }
