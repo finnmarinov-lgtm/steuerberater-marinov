@@ -328,3 +328,14 @@ html[data-schrift="gross"] { font-size: 112.5%; }
 
 /* neues Startvideo: Globus sitzt weiter rechts, im Hochformat Ausschnitt nach rechts schieben */
 @media (max-width: 700px) { .startseite #buehne { --bildpos: 72% 50%; } }
+
+/* Leiste oben folgt dem Farbschema: hell im hellen, dunkel im dunklen Modus */
+:root { --leiste-bg: #e9ecef; --leiste-text: #3d4a56; --leiste-link: #172331; --leiste-rand: #c9d0d6; --leiste-hover: #dde2e6; }
+:root[data-theme="dunkel"] { --leiste-bg: #0a1016; --leiste-text: #c9d2da; --leiste-link: #dfe5ea; --leiste-rand: #3a4856; --leiste-hover: #24313d; }
+.leiste-oben { background: var(--leiste-bg); color: var(--leiste-text); border-bottom: 1px solid var(--linie); }
+.leiste-oben a, .leiste-oben .sprachen a { color: var(--leiste-link); }
+.leiste-oben a:hover, .leiste-oben .sprachen a:hover { color: var(--leiste-link); }
+.leiste-oben .sprachen a[aria-current="true"] { color: var(--leiste-link); }
+.leiste-oben .darstellung summary { border-color: var(--leiste-rand); color: var(--leiste-link); }
+.leiste-oben .darstellung summary:hover { background: var(--leiste-hover); }
+.leiste-oben .vorschau-hinweis { color: var(--bordeaux); }
