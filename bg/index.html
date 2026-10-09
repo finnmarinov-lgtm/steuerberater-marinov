@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="bg">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Marinov &amp; Partner Steuerberater</title>
+<link rel="stylesheet" href="../assets/site.css">
+<link rel="alternate" hreflang="de" href="../index.html"><link rel="alternate" hreflang="en" href="../en/index.html"><link rel="alternate" hreflang="bg" href="../bg/index.html">
+<style>
+  
+  
+  
+  body.gesperrt { overflow: hidden; }
+
+  #buehne { --bildpos: 50% 50%; position: relative; height: 100vh; height: 100svh; overflow: hidden;
+    background: #dcdcda url(../medien/anfang.jpg) no-repeat; background-size: cover; background-position: var(--bildpos); }
+  #fahrt { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: var(--bildpos); transition: opacity 1.4s cubic-bezier(.4,0,.2,1); }
+  #buehne.globus #fahrt { opacity: 0; }
+  #globus { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 1.4s cubic-bezier(.4,0,.2,1); touch-action: none; }
+  #buehne.globus #globus { opacity: 1; }
+  #ringvorne { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; opacity: 0; transition: opacity 1.4s cubic-bezier(.4,0,.2,1); }
+  #buehne.globus #ringvorne { opacity: 1; }
+  #landname { position: absolute; left: 0; top: 0; pointer-events: none; background: var(--tinte); color: #fff; font-size: .85rem;
+    padding: .35rem .7rem; border-radius: 8px; white-space: nowrap; opacity: 0; transition: opacity .15s; transform: translate(14px, -130%); }
+  #landname.zeigen { opacity: .94; }
+  #landname small { opacity: .75; margin-left: .35rem; }
+
+  .titel { position: absolute; top: 7%; left: 50%; transform: translateX(-50%); text-align: center; width: min(92vw, 720px);
+    background: rgba(255,255,255,.72); backdrop-filter: blur(8px); border-radius: 20px; padding: 1.3rem 1.6rem; box-shadow: 0 10px 40px rgba(0,0,0,.08);
+    transition: opacity .5s ease, transform .8s ease; }
+  .titel h1 { margin: 0; font-family: "Palatino Linotype", "Iowan Old Style", Georgia, serif; font-weight: 400;
+    font-size: clamp(2rem, 5.2vw, 3.6rem); letter-spacing: .01em; }
+  .titel p { margin: .5rem 0 0; color: var(--grau); font-size: clamp(.95rem, 1.6vw, 1.15rem); }
+  #buehne:not(.start) .titel { opacity: 0; transform: translate(-50%, -20px); pointer-events: none; }
+
+  .knopf { font: inherit; border: 0; border-radius: 999px; padding: .7rem 1.3rem; cursor: pointer;
+    background: var(--tinte); color: #fff; text-decoration: none; display: inline-block; }
+  .knopf.hell { background: rgba(255,255,255,.85); color: var(--tinte); box-shadow: 0 4px 18px rgba(0,0,0,.08); }
+  .knopf:focus-visible, select:focus-visible { outline: 3px solid var(--akzent-hell); outline-offset: 2px; }
+
+  #los { position: absolute; bottom: 7%; left: 50%; transform: translateX(-50%); transition: opacity .4s; }
+  #los span { display: inline-block; animation: wippen 1.8s ease-in-out infinite; }
+  @keyframes wippen { 50% { transform: translateY(4px); } }
+  #buehne:not(.start) #los { opacity: 0; pointer-events: none; }
+
+  #ueberspringen { position: absolute; right: 20px; bottom: 20px; opacity: 0; pointer-events: none; transition: opacity .3s; font-size: .9rem; }
+  #buehne.fahrt #ueberspringen { opacity: 1; pointer-events: auto; }
+
+  .leiste { position: absolute; left: 50%; bottom: 22px; transform: translateX(-50%); display: flex; gap: .6rem; align-items: center;
+    opacity: 0; pointer-events: none; transition: opacity .5s .3s; flex-wrap: wrap; justify-content: center; width: calc(100% - 32px); }
+  #buehne.globus .leiste { opacity: 1; pointer-events: auto; }
+  .leiste .hinweis { background: rgba(255,255,255,.85); border-radius: 999px; padding: .6rem 1rem; font-size: .92rem; color: var(--grau); }
+  select { font: inherit; padding: .6rem .9rem; border-radius: 999px; border: 1px solid #c9ccce; background: #fff; color: var(--tinte); }
+
+  #infokarte { position: absolute; left: clamp(16px, 5vw, 72px); top: 50%; transform: translate(-16px, -50%); width: min(420px, calc(100% - 32px));
+    background: var(--karte); backdrop-filter: blur(10px); border-radius: 18px; box-shadow: var(--schatten); padding: 1.6rem 1.6rem 1.3rem;
+    opacity: 0; pointer-events: none; transition: opacity .35s, transform .35s; max-height: calc(100% - 120px); overflow: auto; }
+  #infokarte.offen { opacity: 1; transform: translate(0, -50%); pointer-events: auto; }
+  #infokarte h2 { margin: 0 0 .2rem; font-family: "Palatino Linotype", Georgia, serif; font-weight: 400; font-size: 1.7rem; }
+  #infokarte .unter { margin: 0 0 1rem; color: var(--akzent); font-weight: 600; font-size: .95rem; }
+  #infokarte ul { margin: 0 0 1rem; padding-left: 1.1rem; line-height: 1.55; }
+  #infokarte .sprache { font-size: .9rem; color: var(--grau); margin: 0 0 1.1rem; }
+  #infokarte .bg { font-style: italic; }
+  #infokarte .aktionen { display: flex; gap: .5rem; flex-wrap: wrap; }
+  #schliessen { position: absolute; top: 10px; right: 12px; border: 0; background: none; font-size: 1.5rem; cursor: pointer; color: var(--grau); }
+
+  #meldung { position: absolute; top: 24px; left: 50%; transform: translateX(-50%); background: var(--tinte); color: #fff; padding: .55rem 1rem;
+    border-radius: 999px; font-size: .9rem; opacity: 0; transition: opacity .3s; pointer-events: none; }
+  #meldung.zeigen { opacity: .92; }
+
+  
+
+  @media (max-width: 700px) {
+    #buehne { --bildpos: 62% 50%; }
+    #infokarte { top: auto; bottom: 90px; transform: translateY(16px); }
+    #infokarte.offen { transform: none; }
+  }
+</style>
+</head>
+<body class="gesperrt startseite">
+<a class="springen" href="#inhalt">Към съдържанието</a>
+<header class="kopf">
+  <a class="marke" href="../bg/index.html"><span class="marke-name">Marinov &amp; Partner</span><span class="marke-zusatz">Данъчни консултанти</span></a>
+  <a class="vorschau-hinweis" href="#vorschau">Преглед</a>
+  <nav class="hauptnav" aria-label="Меню"><ul><li><a href="../bg/kantora.html">Кантора</a></li><li><a href="../bg/uslugi.html">Услуги</a></li><li><a href="../bg/honorari.html">Хонорари</a></li><li><a href="../bg/kariera.html">Кариера</a></li><li><a href="../bg/linkove.html">Линкове</a></li><li><a href="#kontakt">Контакт</a></li></ul></nav>
+  <details class="menue"><summary>Меню</summary><ul><li><a href="../bg/kantora.html">Кантора</a></li><li><a href="../bg/uslugi.html">Услуги</a></li><li><a href="../bg/honorari.html">Хонорари</a></li><li><a href="../bg/kariera.html">Кариера</a></li><li><a href="../bg/linkove.html">Линкове</a></li><li><a href="#kontakt">Контакт</a></li></ul></details>
+  <nav class="sprachen" aria-label="Език"><a href="../index.html" hreflang="de" lang="de" title="Deutsch">DE</a><a href="../en/index.html" hreflang="en" lang="en" title="English">EN</a><a href="../bg/index.html" hreflang="bg" lang="bg" title="Български" aria-current="true">BG</a></nav>
+</header>
+<main id="inhalt">
+<section id="buehne" class="start" aria-label="Начало">
+  <video id="fahrt" muted playsinline preload="auto" poster="../medien/anfang.jpg">
+    <source src="../medien/fahrt.mp4" type="video/mp4">
+  </video>
+  <canvas id="globus" aria-label="Въртящ се глобус за избор на държава"></canvas>
+  <canvas id="ringvorne" aria-hidden="true"></canvas>
+  <div id="landname" aria-hidden="true"></div>
+  <div class="titel">
+    <p class="titel-name">Marinov &amp; Partner</p>
+    <p>Данъчни консултанти в Десау-Рослау, Германия. Международни данъчни консултации за физически лица и фирми.</p>
+  </div>
+  <button id="los" class="knopf hell" type="button">За коя държава търсите помощ? <span aria-hidden="true">↓</span></button>
+  <button id="ueberspringen" class="knopf hell" type="button">Пропусни</button>
+  <div class="leiste">
+    <span class="hinweis">Завъртете глобуса и изберете държава</span>
+    <label for="landwahl" class="unsichtbar">Изберете държава …</label>
+    <select id="landwahl"><option value="">Изберете държава …</option><option value="276">Германия</option><option value="100">България</option><option value="" disabled>Очаквайте още държави</option></select>
+  </div>
+  <aside id="infokarte" aria-live="polite">
+    <button id="schliessen" type="button" aria-label="Затвори">×</button>
+    <div id="karteninhalt"></div>
+  </aside>
+  <div id="meldung" role="status"></div>
+</section>
+<div class="start-inhalt">
+  <section class="gruss"><h1 class="gruss-titel">Добре дошли в Данъчна кантора Маринов!</h1>
+<p>Една от <strong>основните ни дейности</strong> представлява предоставянето на консултантски услуги на български физически лица, които са данъчно задължени в Германия. Консултираме също така немски физически лица, които извършват дейност в България.</p>
+<p>Подпомагаме нашите клиенти при изпълнението на всички техни <strong>данъчни</strong> задължения в Германия.</p>
+<p>Нашата кантора разполага с широка <strong>международна мрежа</strong> от данъчни и правни експерти в Германия и в много други държави.</p>
+<p>Обичаме да работим с хора от различни националности и култури.</p>
+<p>Нашите консултации и текущо обслужване могат да се водят при необходимост също и на <strong>български език</strong>, както писмената кореспонденция (писма и имейли), така и личните разговори и телефонни обаждания. Използваните от нас договори за услуги, пълномощни, въпросници и др. са също на <strong>български</strong> език.</p>
+<p><strong>Свържете се с нас по телефона! Напишете ни имейл</strong>!</p>
+<p>Убедете се сами колко бързо, сигурно и надеждно можем да Ви помогнем.</p></section>
+  <section class="gruppen" aria-labelledby="gruppen-titel">
+    <h2 id="gruppen-titel">За кого работим</h2>
+    <ul class="gruppen-liste"><li><a href="../bg/balgari-v-germania.html"><span class="gruppe-name">Български граждани в Германия</span><span class="gruppe-text">Работещи по трудов договор или свободна професия в Германия – декларации, освобождаване, възстановяване на данъци.</span></a></li><li><a href="../bg/germanci-v-balgaria.html"><span class="gruppe-name">Немски граждани в България</span><span class="gruppe-text">Дългосрочно командировани или с друга дейност в България – данъчен статус, A1, декларации.</span></a></li><li><a href="../bg/honorari.html"><span class="gruppe-name">Хонорари</span><span class="gruppe-text">Единични услуги, месечни такси и пакетни цени – прозрачно и според нуждата ви.</span></a></li></ul>
+  </section>
+  <section class="personen" aria-labelledby="personen-titel">
+    <h2 id="personen-titel">Вашите консултанти</h2>
+    <div class="personen-reihe"><figure><img src="../medien/partner-emil-marinov.jpg" alt="Емил Маринов" width="180" height="240" loading="lazy"><figcaption><strong>Емил Маринов</strong><br>Данъчен съветник</figcaption></figure><figure><img src="../medien/partner-nadine-marinov.jpg" alt="Надин Маринов" width="180" height="240" loading="lazy"><figcaption><strong>Надин Маринов</strong><br>Данъчна съветничка</figcaption></figure></div>
+    <p><a href="../bg/upraviteli.html">Повече за управителите</a></p>
+  </section>
+</div>
+</main>
+<footer class="fuss" id="kontakt">
+  <div class="fuss-innen">
+    <section class="fuss-kontakt" aria-labelledby="kontakt-titel">
+      <h2 id="kontakt-titel">Контакт</h2>
+      <p class="adresse">Marinov &amp; Partner Steuerberater<br>Meiereistraße 50<br>06847 Dessau-Roßlau<br><a href="https://www.openstreetmap.org/search?query=Meiereistra%C3%9Fe%2050%2C%2006847%20Dessau-Ro%C3%9Flau">Как да стигнете</a></p>
+      <dl class="wege">
+        <dt>Телефон</dt><dd><a href="tel:+4934066149624">+49 340 661496-24</a></dd>
+        <dt>Факс</dt><dd>+49 340 661496-35</dd>
+        <dt>Имейл</dt><dd><a href="mailto:info@steuerberater-marinov.de">info@steuerberater-marinov.de</a></dd>
+      </dl>
+    </section>
+    <section aria-labelledby="zeiten-titel">
+      <h2 id="zeiten-titel">Време за контакт</h2>
+      <p>понеделник до четвъртък 10–12 и 14–17 ч.<br>петък 10–12 ч.</p>
+    </section>
+    <nav class="fuss-links" aria-label="Служебна информация">
+      <a href="../bg/impressum.html">Служебна информация</a>
+      <a href="../bg/privacy.html">Защита на данните</a>
+    </nav>
+  </div>
+  <p class="vorschau-text" id="vorschau">Това е предварителен преглед на новия сайт. Официалният сайт е <a href="https://www.steuerberater-marinov.de">steuerberater-marinov.de</a>.</p>
+</footer>
+<script src="../assets/lib/d3.min.js"></script>
+<script src="../assets/lib/topojson-client.min.js"></script>
+<script type="module">
+import * as THREE from '../assets/lib/three.module.min.js';
+const { geoEquirectangular, geoPath, geoContains, geoCentroid, geoDistance } = window.d3;
+const { feature } = window.topojson;
+// Laden mit bis zu drei Versuchen (z. B. bei wackliger Verbindung)
+const holen = (url, n = 3) => fetch(url).then(r => r.ok ? r : Promise.reject(new Error(r.status)))
+  .catch(e => n > 1 ? new Promise(ok => setTimeout(ok, 500)).then(() => holen(url, n - 1)) : Promise.reject(e));
+
+// Lage der Kugel im letzten Videobild (Video 1280x712, Pixel)
+const VIDEO = { b: 1280, h: 712 };
+const KUGEL = { x: 765, y: 287, r: 197 };
+const ABGLEICH = new URLSearchParams(location.search).has('abgleich');
+
+const LAENDER = {
+ "276": {
+  "name": "Германия",
+  "unter": "Живеете или работите в Германия",
+  "punkte": [
+   "Немски данъчни декларации – и при сезонна работа, командировка или български трудов договор",
+   "Освобождаване от данъци според спогодбата за избягване на двойното данъчно облагане",
+   "Формуляр A1 и други удостоверения за социално осигуряване",
+   "Свободни професии: консултация, счетоводство, ДДС, годишен отчет",
+   "Писмата от немските власти – обяснени на български"
+  ],
+  "sprache": "Консултации на български и немски език"
+ },
+ "100": {
+  "name": "България",
+  "unter": "Немски граждани и фирми с дейност в България",
+  "punkte": [
+   "Консултации за данъчните и осигурителните последици от регистрация на фирма или местожителство в България",
+   "Определяне на данъчния статус",
+   "Освобождаване от данък общ доход според спогодбата за избягване на двойното данъчно облагане",
+   "Формуляр A1 и други удостоверения за социално осигуряване",
+   "Немски данъчни декларации за лица и фирми с дейност в България"
+  ],
+  "sprache": "Консултации на немски и български език"
+ }
+};
+
+const buehne = document.getElementById('buehne');
+const video = document.getElementById('fahrt');
+const leinwand = document.getElementById('globus');
+const karte = document.getElementById('infokarte');
+const inhalt = document.getElementById('karteninhalt');
+const meldung = document.getElementById('meldung');
+const landwahl = document.getElementById('landwahl');
+let zustand = 'start';
+
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+scrollTo(0, 0);
+
+// ---------- Ablauf: ein Scroll spielt die ganze Fahrt ----------
+function setzeZustand(z) {
+  zustand = z;
+  buehne.className = z;
+  document.body.classList.toggle('gesperrt', z !== 'globus');
+}
+function starteFahrt() {
+  if (zustand !== 'start') return;
+  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return zumGlobus();
+  setzeZustand('fahrt');
+  video.playbackRate = 1;
+  video.play().catch(zumGlobus);
+  requestAnimationFrame(abbremsen);
+}
+// Letzte Sekunde sanft abbremsen, damit die Kamera nicht hart stehen bleibt
+function abbremsen() {
+  if (zustand !== 'fahrt') return;
+  const rest = video.duration - video.currentTime;
+  if (rest < 1) video.playbackRate = Math.max(0.3, rest);
+  requestAnimationFrame(abbremsen);
+}
+function zumGlobus() {
+  if (zustand === 'globus') return;
+  if (!video.ended) video.pause();
+  buehne.style.backgroundImage = 'url(../medien/ende.jpg)'; // Hintergrund = letztes Videobild
+  setzeZustand('globus');
+  setTimeout(dreheNachEuropa, 1500); // erst drehen, wenn die Überblendung fertig ist
+}
+video.addEventListener('ended', zumGlobus);
+document.getElementById('los').addEventListener('click', starteFahrt);
+document.getElementById('ueberspringen').addEventListener('click', zumGlobus);
+addEventListener('wheel', e => {
+  if (zustand === 'globus') return;
+  e.preventDefault();
+  if (e.deltaY > 0) starteFahrt();
+}, { passive: false });
+let touchY = null;
+addEventListener('touchstart', e => { touchY = e.touches[0].clientY; }, { passive: true });
+addEventListener('touchmove', e => {
+  if (zustand === 'globus') return;
+  e.preventDefault();
+  if (touchY !== null && touchY - e.touches[0].clientY > 20) starteFahrt();
+}, { passive: false });
+addEventListener('keydown', e => {
+  if (zustand !== 'start') return;
+  if (['ArrowDown', 'PageDown', ' ', 'Enter'].includes(e.key) && e.target === document.body) { e.preventDefault(); starteFahrt(); }
+});
+
+// ---------- 3D-Globus ----------
+const renderer = new THREE.WebGLRenderer({ canvas: leinwand, antialias: true, alpha: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+const szene = new THREE.Scene();
+const kamera = new THREE.OrthographicCamera(-1, 1, 1, -1, 1, 4000);
+kamera.position.z = 2000; // Strahl fuer Klicks startet vor dem Globus
+szene.add(new THREE.HemisphereLight(0xffffff, 0xb9b4aa, 1.6));
+const sonne = new THREE.DirectionalLight(0xffffff, 1.5);
+sonne.position.set(-0.6, 0.5, 1);
+szene.add(sonne);
+
+const neigung = new THREE.Group();   // Achse wie im Video
+const kugelGruppe = new THREE.Group(); // Drehung um die Achse
+neigung.add(kugelGruppe);
+szene.add(neigung);
+
+const textur = document.createElement('canvas');
+textur.width = 4096; textur.height = 2048;
+const tctx = textur.getContext('2d');
+const tex = new THREE.CanvasTexture(textur);
+tex.colorSpace = THREE.SRGBColorSpace;
+tex.anisotropy = renderer.capabilities.getMaxAnisotropy();
+// zweite, unsichtbare Karte: jedes Land hat eine eigene Farbe = Nummer (schnelles Finden und Hervorheben)
+const idKarte = document.createElement('canvas');
+idKarte.width = 4096; idKarte.height = 2048;
+const ictx = idKarte.getContext('2d', { willReadFrequently: true });
+const idTex = new THREE.CanvasTexture(idKarte);
+idTex.minFilter = idTex.magFilter = THREE.NearestFilter;
+idTex.generateMipmaps = false;
+let idDaten = null;
+const hoverUniform = { value: -1 };
+const material = new THREE.MeshStandardMaterial({ map: tex, roughness: 0.82, metalness: 0 });
+material.onBeforeCompile = shader => {
+  shader.uniforms.idKarte = { value: idTex };
+  shader.uniforms.hoverId = hoverUniform;
+  shader.fragmentShader = shader.fragmentShader
+    .replace('#include <common>', `#include <common>
+      uniform sampler2D idKarte;
+      uniform float hoverId;`)
+    .replace('#include <map_fragment>', `#include <map_fragment>
+      vec4 idc = texture2D(idKarte, vMapUv);
+      float landId = floor(idc.r * 255.0 + 0.5) + floor(idc.g * 255.0 + 0.5) * 256.0 - 1.0;
+      if (hoverId >= 0.0 && abs(landId - hoverId) < 0.5) diffuseColor.rgb = mix(diffuseColor.rgb, vec3(0.36, 0.55, 0.75), 0.45);`);
+};
+const kugel = new THREE.Mesh(new THREE.SphereGeometry(1, 96, 64), material);
+kugelGruppe.add(kugel);
+
+const DEG = Math.PI / 180;
+
+// Achse steht fest wie beim Globus im Video (Stift oben, Stab unten); gedreht wird nur um die Achse
+const NEIG = 13;
+let lon = 18, neig = NEIG, ziel = null;
+neigung.rotation.z = -5 * DEG;
+
+let laender = [];
+// Ländernamen auf Deutsch: Länder-Nummer (wie in den Kartendaten) -> Zweibuchstaben-Code -> Name vom Browser
+const deNamen = new Intl.DisplayNames(['bg'], { type: 'region' });
+let nummerZuCode = {};
+holen('../assets/lib/codes.json').then(r => r.json())
+  .then(liste => { for (const [a2, , num] of liste) nummerZuCode[num] = a2; }).catch(() => {});
+function landName(f) {
+  if (LAENDER[f.id]) return LAENDER[f.id].name;
+  const a2 = nummerZuCode[f.id];
+  try { if (a2) return deNamen.of(a2); } catch (e) {}
+  return f.properties.name;
+}
+let hover = null;
+const projektion = geoEquirectangular().scale(4096 / (2 * Math.PI)).translate([2048, 1024]);
+const pfad = geoPath(projektion, tctx);
+const idPfad = geoPath(projektion, ictx);
+
+function maleTextur() {
+  tctx.fillStyle = '#f2f2f0';
+  tctx.fillRect(0, 0, 4096, 2048);
+  for (const f of laender) {
+    const aktiv = f.id in LAENDER;
+    tctx.beginPath(); pfad(f);
+    tctx.fillStyle = aktiv ? '#2f5d8a' : '#a4a7a9';
+    tctx.fill();
+    tctx.lineWidth = 1.6; tctx.strokeStyle = '#f7f7f5'; tctx.stroke();
+  }
+  tex.needsUpdate = true;
+  ictx.fillStyle = '#000';
+  ictx.fillRect(0, 0, 4096, 2048);
+  laender.forEach((f, i) => {
+    const n = i + 1;
+    ictx.fillStyle = `rgb(${n & 255},${n >> 8},0)`;
+    ictx.beginPath(); idPfad(f); ictx.fill();
+  });
+  idDaten = ictx.getImageData(0, 0, 4096, 2048).data;
+  idTex.needsUpdate = true;
+}
+
+holen('../assets/lib/countries-50m.json')
+  .then(r => r.json())
+  .then(topo => { laender = feature(topo, topo.objects.countries).features; maleTextur(); });
+
+let lage = { x: 0, y: 0, r: 100 };
+// Rechter Ringbogen und Stift liegen vor der Kugel: aus dem letzten Videobild ausschneiden und über den 3D-Globus legen
+const ringLeinwand = document.getElementById('ringvorne');
+const endBild = new Image();
+endBild.src = '../medien/ende.jpg';
+endBild.onload = () => anordnen();
+const RING_PUNKTE = [[792,62],[836,80],[864,100],[886,120],[903,140],[916,160],[928,180],[939,200],[947,220],[953,240],[957,260],[960,280],[963,300],[963,320],[963,340],[960,360],[956,380],[951,400],[941,420],[930,440],[914,460],[890,476],[860,488]]; // im Bild gemessen
+function zeichneRingVorne(s, ox, oy) {
+  const B = buehne.clientWidth, H = buehne.clientHeight, dpr = Math.min(devicePixelRatio, 2);
+  ringLeinwand.width = B * dpr; ringLeinwand.height = H * dpr;
+  if (!endBild.complete || !endBild.naturalWidth) return;
+  // Maske: rechter Ringbogen + Achsstift (in Bildkoordinaten des Videos)
+  const maske = document.createElement('canvas');
+  maske.width = endBild.naturalWidth; maske.height = endBild.naturalHeight;
+  const m = maske.getContext('2d');
+  m.lineWidth = 18; m.lineCap = 'round'; m.lineJoin = 'round';
+  m.beginPath();
+  RING_PUNKTE.forEach(([x, y], i) => i ? m.lineTo(x, y) : m.moveTo(x, y));
+  m.stroke();
+  m.fillRect(KUGEL.x + 14, 40, 12, 52); // Achsstift oben (bis knapp an die Kugel)
+  m.globalCompositeOperation = 'source-in';
+  m.drawImage(endBild, 0, 0);
+  const g = ringLeinwand.getContext('2d');
+  g.setTransform(dpr * s, 0, 0, dpr * s, dpr * ox, dpr * oy);
+  g.drawImage(maske, 0, 0);
+}
+function anordnen() {
+  const B = buehne.clientWidth, H = buehne.clientHeight;
+  if (!B || !H) return; // unsichtbar (z. B. verstecktes Fenster): Lage behalten
+  renderer.setSize(B, H, false);
+  kamera.left = -B / 2; kamera.right = B / 2; kamera.top = H / 2; kamera.bottom = -H / 2;
+  kamera.updateProjectionMatrix();
+  // gleiche Rechnung wie object-fit: cover (+ object-position)
+  const s = Math.max(B / VIDEO.b, H / VIDEO.h);
+  const posX = parseFloat(getComputedStyle(video).objectPosition) / 100 || 0.5;
+  const ox = (B - VIDEO.b * s) * posX, oy = (H - VIDEO.h * s) / 2;
+  lage = { x: ox + KUGEL.x * s, y: oy + KUGEL.y * s, r: KUGEL.r * s + 1.5 };
+  neigung.position.set(lage.x - B / 2, H / 2 - lage.y, 0);
+  neigung.scale.set(lage.r * 0.98, lage.r, lage.r); // Kugel im Video ist minimal schmaler als hoch
+  zeichneRingVorne(s, ox, oy);
+}
+addEventListener('resize', anordnen);
+anordnen();
+
+function richte() {
+  kugelGruppe.rotation.y = -(90 + lon) * DEG;
+  neigung.rotation.x = neig * DEG;
+}
+
+function dreheNachEuropa() { if (!ABGLEICH) ziel = { lon: 15, neig: NEIG }; }
+
+// ---------- Ziehen, Zeigen, Anklicken ----------
+const strahl = new THREE.Raycaster();
+const zeiger = new THREE.Vector2();
+let ziehen = null;
+
+function landUnter(e) {
+  if (kamera.right === 0) anordnen();
+  const rect = leinwand.getBoundingClientRect();
+  zeiger.set(((e.clientX - rect.left) / rect.width) * 2 - 1, -((e.clientY - rect.top) / rect.height) * 2 + 1);
+  strahl.setFromCamera(zeiger, kamera);
+  const treffer = strahl.intersectObject(kugel)[0];
+  if (!treffer) return null;
+  const p = [(treffer.uv.x - 0.5) * 360, (treffer.uv.y - 0.5) * 180];
+  const px = Math.min(4095, Math.floor(treffer.uv.x * 4096)), py = Math.min(2047, Math.floor((1 - treffer.uv.y) * 2048));
+  const o = (py * 4096 + px) * 4;
+  const n = idDaten ? idDaten[o] + idDaten[o + 1] * 256 : 0;
+  const f = n > 0 ? laender[n - 1] : null;
+  if (f && f.id in LAENDER) return f;
+  // kleine Länder großzügig treffen: Nähe zu Deutschland/Bulgarien reicht
+  for (const id in LAENDER) {
+    const z = laender.find(x => x.id === id);
+    if (z && geoDistance(geoCentroid(z), p) < 4.5 * DEG) return z;
+  }
+  return f || null;
+}
+
+const schild = document.getElementById('landname');
+function zeigeLandname(f, e) {
+  if (!f) { schild.classList.remove('zeigen'); return; }
+  const b = buehne.getBoundingClientRect();
+  schild.innerHTML = landName(f) + (f.id in LAENDER ? '<small>вижте повече</small>' : '');
+  schild.style.left = (e.clientX - b.left) + 'px';
+  schild.style.top = (e.clientY - b.top) + 'px';
+  // am rechten Rand das Schild links neben die Maus setzen, damit es nicht abgeschnitten wird
+  schild.style.transform = e.clientX - b.left > b.width - 220 ? 'translate(calc(-100% - 14px), -130%)' : '';
+  schild.classList.add('zeigen');
+}
+leinwand.addEventListener('pointerleave', () => schild.classList.remove('zeigen'));
+leinwand.addEventListener('pointerdown', e => {
+  if (zustand !== 'globus') return;
+  schild.classList.remove('zeigen');
+  ziehen = { x: e.clientX, y: e.clientY, lon, neig, bewegt: false };
+  leinwand.setPointerCapture(e.pointerId);
+  ziel = null;
+});
+leinwand.addEventListener('pointermove', e => {
+  if (zustand !== 'globus') return;
+  if (ziehen) {
+    const dx = e.clientX - ziehen.x, dy = e.clientY - ziehen.y;
+    if (!ziehen.bewegt && Math.hypot(dx, dy) < 5) return; // Zittern beim Klicken ignorieren
+    ziehen.bewegt = true;
+    lon = ziehen.lon - dx / lage.r * 60;
+    return;
+  }
+  const f = landUnter(e);
+  const id = f ? f.id : null;
+  leinwand.style.cursor = f ? 'pointer' : 'grab';
+  zeigeLandname(f, e);
+  if (id !== hover) { hover = id; hoverUniform.value = f ? laender.indexOf(f) : -1; }
+});
+let gezogen = false;
+const ziehenEnde = e => { if (ziehen) { gezogen = Math.hypot(e.clientX - ziehen.x, e.clientY - ziehen.y) > 5; ziehen = null; } };
+leinwand.addEventListener('pointerup', ziehenEnde);
+leinwand.addEventListener('pointercancel', ziehenEnde);
+leinwand.addEventListener('click', e => {
+  if (zustand !== 'globus') return;
+  if (gezogen) { gezogen = false; return; }
+  const f = landUnter(e);
+  if (!f) return;
+  if (f.id in LAENDER) zeigeLand(f.id);
+  else zeigeMeldung(`${landName(f)}: скоро ще добавим информация – обадете ни се.`);
+});
+
+function zeigeLand(id) {
+  const l = LAENDER[id];
+  const f = laender.find(x => x.id === id);
+  if (f) { const [cl] = geoCentroid(f); ziel = { lon: cl, neig: NEIG }; }
+  inhalt.innerHTML = `
+    <h2>${l.name}</h2>
+    <p class="unter">${l.unter}</p>
+    <ul>${l.punkte.map(p => `<li>${p}</li>`).join('')}</ul>
+    <p class="sprache">${l.sprache}${l.bg ? ` · <span class="bg" lang="bg">${l.bg}</span>` : ''}</p>
+    <div class="aktionen">
+      <a class="knopf" href="tel:+4934066149624">Обадете се</a>
+      <a class="knopf hell" href="mailto:info@steuerberater-marinov.de">Напишете имейл</a>
+    </div>`;
+  karte.classList.add('offen');
+  landwahl.value = id;
+}
+document.getElementById('schliessen').addEventListener('click', () => { karte.classList.remove('offen'); landwahl.value = ''; });
+landwahl.addEventListener('change', () => landwahl.value ? zeigeLand(landwahl.value) : karte.classList.remove('offen'));
+
+let meldungTimer;
+function zeigeMeldung(text) {
+  meldung.textContent = text;
+  meldung.classList.add('zeigen');
+  clearTimeout(meldungTimer);
+  meldungTimer = setTimeout(() => meldung.classList.remove('zeigen'), 2600);
+}
+
+if (ABGLEICH) window.__dbg = { landUnter, strahl, kugel, kamera, zeiger };
+// ---------- Zeichnen ----------
+function schleife() {
+  if (ziel) {
+    let d = ((ziel.lon - lon + 540) % 360) - 180;
+    lon += d * 0.035;
+    neig += (ziel.neig - neig) * 0.035;
+    if (Math.abs(d) < 0.05 && Math.abs(ziel.neig - neig) < 0.05) ziel = null;
+  }
+  richte();
+  renderer.render(szene, kamera);
+  requestAnimationFrame(schleife);
+}
+schleife();
+
+if (ABGLEICH) {
+  // Abgleich: letztes Videobild zeigen, Globus halb durchsichtig darüber
+  zumGlobus(); ziel = null;
+  leinwand.style.transition = 'none';
+  leinwand.style.opacity = '0.55';
+  window.abgleich = { KUGEL, setze(x, y, r, l, n) { Object.assign(KUGEL, { x, y, r }); if (l != null) lon = l; if (n != null) neig = n; anordnen(); } };
+}
+</script>
+</body>
+</html>
