@@ -321,3 +321,7 @@ html[data-schrift="gross"] { font-size: 112.5%; }
   .text .ansprech h2 { font-size: 1.25rem; hyphens: manual; -webkit-hyphens: manual; }
   .knopf-voll, .knopf-rand { width: 100%; text-align: center; }
 }
+@media (max-width: 560px) {
+  .darstellung { position: static; }
+  .darstellung-feld { position: fixed; right: 12px; left: auto; top: calc(var(--oben) + 6px); }
+}
