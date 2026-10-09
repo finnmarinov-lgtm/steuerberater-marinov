@@ -187,8 +187,8 @@ const holen = (url, n = 3) => fetch(url).then(r => r.ok ? r : Promise.reject(new
   .catch(e => n > 1 ? new Promise(ok => setTimeout(ok, 500)).then(() => holen(url, n - 1)) : Promise.reject(e));
 
 // Lage der Kugel im letzten Videobild (Video 1280x712, Pixel)
-const VIDEO = { b: 1280, h: 712 };
-const KUGEL = { x: 765, y: 287, r: 197 };
+const VIDEO = { b: 1280, h: 734 };
+const KUGEL = { x: 855, y: 327, r: 204 };
 const ABGLEICH = new URLSearchParams(location.search).has('abgleich');
 
 const LAENDER = {
@@ -331,9 +331,9 @@ kugelGruppe.add(kugel);
 const DEG = Math.PI / 180;
 
 // Achse steht fest wie beim Globus im Video (Stift oben, Stab unten); gedreht wird nur um die Achse
-const NEIG = 13;
-let lon = 18, neig = NEIG, ziel = null;
-neigung.rotation.z = -5 * DEG;
+const NEIG = 6;
+let lon = 25, neig = NEIG, ziel = null;
+neigung.rotation.z = -9 * DEG;
 
 let laender = [];
 // Ländernamen auf Deutsch: Länder-Nummer (wie in den Kartendaten) -> Zweibuchstaben-Code -> Name vom Browser
@@ -384,7 +384,7 @@ const ringLeinwand = document.getElementById('ringvorne');
 const endBild = new Image();
 endBild.src = '../medien/ende.jpg';
 endBild.onload = () => anordnen();
-const RING_PUNKTE = [[792,62],[836,80],[864,100],[886,120],[903,140],[916,160],[928,180],[939,200],[947,220],[953,240],[957,260],[960,280],[963,300],[963,320],[963,340],[960,360],[956,380],[951,400],[941,420],[930,440],[914,460],[890,476],[860,488]]; // im Bild gemessen
+const RING_PUNKTE = []; // Bogen liegt hinter der Kugel
 function zeichneRingVorne(s, ox, oy) {
   const B = buehne.clientWidth, H = buehne.clientHeight, dpr = Math.min(devicePixelRatio, 2);
   ringLeinwand.width = B * dpr; ringLeinwand.height = H * dpr;
@@ -397,7 +397,7 @@ function zeichneRingVorne(s, ox, oy) {
   m.beginPath();
   RING_PUNKTE.forEach(([x, y], i) => i ? m.lineTo(x, y) : m.moveTo(x, y));
   m.stroke();
-  m.fillRect(KUGEL.x + 14, 40, 12, 52); // Achsstift oben (bis knapp an die Kugel)
+  m.fillRect(KUGEL.x + 19, 84, 28, 42); // Achsstift oben (bis knapp an die Kugel)
   m.globalCompositeOperation = 'source-in';
   m.drawImage(endBild, 0, 0);
   const g = ringLeinwand.getContext('2d');
