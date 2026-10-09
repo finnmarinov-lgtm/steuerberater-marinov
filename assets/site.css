@@ -229,3 +229,8 @@ body { line-height: 1.72; }
   .menue-sprachen a { display: inline-block; padding: .2rem .4rem; }
   .menue-sprachen a[aria-current="true"] { color: var(--bordeaux); font-weight: 600; }
 }
+
+/* Kopfbilder der Inhaltsseiten */
+.kopfbild { margin: 0 0 2.8rem; }
+.kopfbild img { display: block; width: 100%; aspect-ratio: 21 / 9; object-fit: cover; border-radius: 2px; background: var(--wand); }
+@media (max-width: 560px) { .kopfbild img { aspect-ratio: 3 / 2; } }
