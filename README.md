@@ -1,7 +1,7 @@
-# Marinov & Partner Steuerberater – neue Webseite (Vorschau)
+# Marinov & Partner Steuerberater – Webseite
 
-Vorschau der neuen Webseite der Kanzlei Marinov & Partner Steuerberater, Dessau-Roßlau.
-Die offizielle Seite ist weiterhin <https://www.steuerberater-marinov.de>. Diese Vorschau ist für Suchmaschinen gesperrt (`noindex`).
+Webseite der Kanzlei Marinov & Partner Steuerberater, Dessau-Roßlau: <https://steuerberater-marinov.de>
+(veröffentlicht über GitHub Pages aus `main`, eigene Domain über `CNAME`; die frühere Vorschau-Adresse leitet dorthin um).
 
 ## Inhalt
 
@@ -25,12 +25,11 @@ Die offizielle Seite ist weiterhin <https://www.steuerberater-marinov.de>. Diese
 - Kein „internationales Netzwerk“ mehr, stattdessen Mandanten in vielen Ländern
 - Tippfehler korrigiert, Gebühren-Beispiel ohne Jahreszahl 2009
 
-## Vor der Veröffentlichung
+## Noch offen
 
 - Datenschutzerklärung von einer Fachperson prüfen lassen
 - Bulgarische Texte gegenlesen lassen
 - Hochformat-Video für Handys (bis dahin Ausschnitt des 16:9-Videos)
-- Umzug der Domain: Anleitung liegt außerhalb dieses Repos (`UMZUG-DOMAIN.md`)
 
 Gebaut mit `build.py` aus den gesicherten Texten der alten Seite; geprüft mit `pruefen.py` (Verweise, HTML, Überschriften, Beschriftungen,
 Textfehler) und `vollstaendig.py` (alle Zeilen der alten Seite vorhanden).
