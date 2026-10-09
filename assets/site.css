@@ -154,3 +154,58 @@ a:hover { color: var(--tinte); }
 @media (max-width: 820px) { .fuss-innen { grid-template-columns: 1fr; } }
 
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
+
+/* ---------- Feinschliff: ruhiger, mehr Raum, klarere Gliederung */
+:root { --tinte: #172331; --blau: #24496e; --linie: #d6dbdf; }
+body { line-height: 1.72; }
+.kopf { height: 72px; }
+:root { --kopf: 72px; }
+.hauptnav ul { gap: 1.8rem; }
+.hauptnav a { font-size: .95rem; letter-spacing: .01em; }
+.vorschau-hinweis { border-radius: 2px; }
+
+/* Seitenkopf mit Linie, großzügiger Abstand */
+.seite { padding-top: clamp(56px, 8vw, 112px); padding-bottom: 96px; }
+.seite.mit-unternav { grid-template-columns: 220px minmax(0, 1fr); gap: clamp(32px, 7vw, 104px); }
+.text { max-width: 66ch; }
+.text h1 { margin: 0 0 2.6rem; padding-bottom: 1.6rem; border-bottom: 1px solid var(--linie); letter-spacing: -.005em; }
+.text p { margin: 0 0 1.35rem; }
+.text h2 { margin: 3.6rem 0 1.1rem; padding-top: 2rem; border-top: 1px solid var(--linie); }
+.text h1 + h2, .text h1 + .portrait + h2 { margin-top: 0; padding-top: 0; border-top: 0; }
+.text h3 { margin: 2.8rem 0 .9rem; font-size: 1rem; letter-spacing: .01em; color: var(--tinte); }
+.text ul { margin: 0 0 2rem; }
+.text li { margin: .55rem 0; padding-left: .2rem; }
+.text .portrait { margin-top: 3.4rem; }
+.text .portrait img, .personen img { border-radius: 2px; }
+
+/* Unternavigation als klares Inhaltsverzeichnis */
+.unternav { top: 32px; }
+.unternav a { padding: .55rem 0 .55rem 1.1rem; }
+@media (max-width: 820px) { .unternav a { border-radius: 3px; } }
+
+/* Leistungen: ruhige Zeilen mit mehr Luft */
+.text ul.leistungen { margin-bottom: 2.6rem; }
+.leistungen summary { padding: 1.15rem 2.6rem 1.15rem 0; }
+.leistungen > li.ohne { padding: 1.15rem 0; }
+.erklaerung { padding: .2rem 0 1.8rem; max-width: 62ch; }
+.erklaerung p { margin-bottom: 1rem; }
+
+/* Startseite */
+.start-inhalt { padding-top: clamp(72px, 10vw, 136px); }
+.gruss-titel { margin-bottom: 2rem; padding-bottom: 1.6rem; border-bottom: 1px solid var(--linie); }
+.gruss p { margin-bottom: 1.3rem; }
+.gruppen, .personen { margin-top: clamp(80px, 11vw, 136px); }
+.gruppen h2, .personen h2 { margin-bottom: 1.8rem; }
+.gruppen-liste a { padding: 1.6rem 0; }
+.personen-reihe { gap: 3rem; }
+
+/* Startbereich: eckiger, sachlicher */
+.startseite .titel { border-radius: 4px; background: rgba(255, 255, 255, .86); padding: 1.6rem 2rem; }
+.startseite .knopf, .startseite .leiste .hinweis, .startseite select { border-radius: 4px; }
+.startseite #infokarte { border-radius: 6px; }
+.startseite #landname { border-radius: 3px; }
+
+/* Fuß */
+.fuss { margin-top: 96px; }
+.fuss-innen { padding-top: 72px; padding-bottom: 48px; gap: 3.5rem; }
+.wege { gap: .45rem 1.2rem; }
