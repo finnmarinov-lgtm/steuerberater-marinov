@@ -339,3 +339,33 @@ html[data-schrift="gross"] { font-size: 112.5%; }
 .leiste-oben .darstellung summary { border-color: var(--leiste-rand); color: var(--leiste-link); }
 .leiste-oben .darstellung summary:hover { background: var(--leiste-hover); }
 .leiste-oben .vorschau-hinweis { color: var(--bordeaux); }
+
+.text .einleitung { font: 400 1.3rem/1.5 var(--serif); color: var(--tinte); margin: 0 0 1.8rem; }
+
+/* ---------- Suche */
+.suche-form { display: flex; align-items: center; border: 1px solid var(--leiste-rand); border-radius: 3px; overflow: hidden; }
+.suche-form input { width: 11rem; border: 0; background: transparent; color: var(--leiste-link); font: inherit; font-size: .85rem; padding: .25rem .55rem; }
+.suche-form input::placeholder { color: var(--leiste-text); opacity: .8; }
+.suche-form button { border: 0; background: transparent; color: var(--leiste-link); display: grid; place-items: center; width: 28px; height: 28px; cursor: pointer; }
+.suche-form button:hover { background: var(--leiste-hover); }
+@media (max-width: 900px) { .suche-form input { display: none; } .suche-form { border: 0; } }
+@media (max-width: 400px) { .suche-form { display: none; } }
+.suche-gross { display: flex; gap: .6rem; flex-wrap: wrap; margin: 0 0 1.4rem; }
+.suche-gross input { flex: 1 1 16rem; font: inherit; padding: .65rem .9rem; border: 1px solid var(--linie); border-radius: 3px; background: var(--flaeche); color: var(--tinte); }
+.suche-gross button { border: 0; cursor: pointer; font: inherit; }
+.text ul.treffer { list-style: none; padding: 0; border-top: 1px solid var(--linie); }
+.treffer li { margin: 0; padding: 1.1rem 0; border-bottom: 1px solid var(--linie); }
+.treffer a { font: 500 1.15rem/1.35 var(--serif); }
+.treffer p { margin: .35rem 0 0; color: var(--schiefer); font-size: .95rem; }
+.treffer mark { background: color-mix(in srgb, var(--blau) 25%, transparent); color: inherit; padding: 0 .1em; border-radius: 2px; }
+
+/* ---------- Neuigkeiten */
+.neuigkeiten { margin-top: clamp(80px, 11vw, 136px); max-width: 860px; }
+.neuigkeiten h2 { font: 400 1.75rem/1.2 var(--serif); margin: 0 0 .4rem; }
+.news-hinweis { color: var(--schiefer); margin: 0 0 1.4rem; font-size: .95rem; }
+.news-liste { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--linie); }
+.news-liste li { display: grid; grid-template-columns: 11rem 1fr; gap: .3rem 1.5rem; padding: 1rem 0; border-bottom: 1px solid var(--linie); }
+.news-liste time { color: var(--schiefer); font-size: .9rem; padding-top: .1rem; }
+.news-liste a { color: var(--tinte); text-decoration: none; }
+.news-liste a:hover { color: var(--blau); text-decoration: underline; }
+@media (max-width: 600px) { .news-liste li { grid-template-columns: 1fr; } }

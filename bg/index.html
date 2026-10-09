@@ -91,6 +91,7 @@
     <a href="mailto:info@steuerberater-marinov.de" class="schnell"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M3 5h18v14H3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m3.5 6 8.5 7 8.5-7" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span>info@steuerberater-marinov.de</span></a>
     <a class="vorschau-hinweis" href="#vorschau">Преглед</a>
     <span class="leiste-oben-rechts">
+      <form class="suche-form" role="search" action="../bg/tarsene.html"><input type="search" name="q" placeholder="Търсене …" aria-label="Търсене"><button type="submit" aria-label="Търсене"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m15.5 15.5 5 5" stroke="currentColor" stroke-width="1.8"/></svg></button></form>
       <details class="darstellung">
     <summary aria-label="Изглед" title="Изглед"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/></svg></summary>
     <div class="darstellung-feld">
@@ -106,7 +107,7 @@
   <a class="marke" href="../bg/index.html"><span class="marke-name">Marinov &amp; Partner</span><span class="marke-zusatz">Данъчни консултанти</span></a>
   <nav class="hauptnav" aria-label="Меню"><ul><li><a href="../bg/kantora.html">Кантора</a></li><li><a href="../bg/uslugi.html">Услуги</a></li><li><a href="../bg/honorari.html">Хонорари</a></li><li><a href="../bg/kariera.html">Кариера</a></li><li><a href="../bg/linkove.html">Линкове</a></li></ul></nav>
   <a class="kontakt-knopf" href="#kontakt">Свържете се с нас</a>
-  <details class="menue"><summary>Меню</summary><ul><li><a href="../bg/kantora.html">Кантора</a></li><li><a href="../bg/uslugi.html">Услуги</a></li><li><a href="../bg/honorari.html">Хонорари</a></li><li><a href="../bg/kariera.html">Кариера</a></li><li><a href="../bg/linkove.html">Линкове</a></li><li><a href="#kontakt">Контакт</a></li></ul></details>
+  <details class="menue"><summary>Меню</summary><ul><li><a href="../bg/kantora.html">Кантора</a></li><li><a href="../bg/uslugi.html">Услуги</a></li><li><a href="../bg/honorari.html">Хонорари</a></li><li><a href="../bg/kariera.html">Кариера</a></li><li><a href="../bg/linkove.html">Линкове</a></li><li><a href="#kontakt">Контакт</a></li><li><a href="../bg/tarsene.html">Търсене</a></li></ul></details>
 </header>
 <main id="inhalt">
 <section id="buehne" class="start" aria-label="Начало">
@@ -146,6 +147,11 @@
     <h2 id="gruppen-titel">За кого работим</h2>
     <ul class="gruppen-liste"><li><a href="../bg/balgari-v-germania.html"><span class="gruppe-name">Български граждани в Германия</span><span class="gruppe-text">Работещи по трудов договор или свободна професия в Германия – декларации, освобождаване, възстановяване на данъци.</span></a></li><li><a href="../bg/germanci-v-balgaria.html"><span class="gruppe-name">Немски граждани в България</span><span class="gruppe-text">Дългосрочно командировани или с друга дейност в България – данъчен статус, A1, декларации.</span></a></li><li><a href="../bg/honorari.html"><span class="gruppe-name">Хонорари</span><span class="gruppe-text">Единични услуги, месечни такси и пакетни цени – прозрачно и според нуждата ви.</span></a></li></ul>
   </section>
+  <section class="neuigkeiten" aria-labelledby="news-titel">
+    <h2 id="news-titel">Данъчни новини от Германия</h2>
+    <p class="news-hinweis">Най-новите съобщения от Haufe (на немски език), обновявани ежедневно.</p>
+    <ul class="news-liste" data-news="../assets/news.json" data-anzahl="6" data-fehler="Новините не могат да бъдат заредени в момента."></ul>
+  </section>
   <section class="personen" aria-labelledby="personen-titel">
     <h2 id="personen-titel">Вашите консултанти</h2>
     <div class="personen-reihe"><figure><img src="../medien/partner-emil-marinov.jpg" alt="Емил Маринов" width="180" height="240" loading="lazy"><figcaption><strong>Емил Маринов</strong><br>Данъчен съветник</figcaption></figure><figure><img src="../medien/partner-nadine-marinov.jpg" alt="Надин Маринов" width="180" height="240" loading="lazy"><figcaption><strong>Надин Маринов</strong><br>Данъчна съветничка</figcaption></figure></div>
@@ -176,6 +182,7 @@
   <p class="vorschau-text" id="vorschau">Това е предварителен преглед на новия сайт. Официалният сайт е <a href="https://www.steuerberater-marinov.de">steuerberater-marinov.de</a>.</p>
 </footer>
 <script src="../assets/darstellung.js" defer></script>
+<script src="../assets/news.js" defer></script>
 <script src="../assets/lib/d3.min.js"></script>
 <script src="../assets/lib/topojson-client.min.js"></script>
 <script type="module">
