@@ -19,7 +19,7 @@
   body.gesperrt { overflow: hidden; }
 
   #buehne { --bildpos: 50% 50%; position: relative; height: 100vh; height: 100svh; overflow: hidden;
-    background: #dcdcda url(../medien/anfang.jpg) no-repeat; background-size: cover; background-position: var(--bildpos); }
+    background: #dcdcda url(../medien/anfang.jpg?v=2) no-repeat; background-size: cover; background-position: var(--bildpos); }
   #fahrt { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: var(--bildpos); transition: opacity 1.4s cubic-bezier(.4,0,.2,1); }
   #buehne.globus #fahrt { opacity: 0; }
   #globus { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 1.4s cubic-bezier(.4,0,.2,1); touch-action: none; }
@@ -110,8 +110,8 @@
 </header>
 <main id="inhalt">
 <section id="buehne" class="start" aria-label="Начало">
-  <video id="fahrt" muted playsinline preload="auto" poster="../medien/anfang.jpg">
-    <source src="../medien/fahrt.mp4" type="video/mp4">
+  <video id="fahrt" muted playsinline preload="auto" poster="../medien/anfang.jpg?v=2">
+    <source src="../medien/fahrt.mp4?v=2" type="video/mp4">
   </video>
   <canvas id="globus" aria-label="Въртящ се глобус за избор на държава"></canvas>
   <canvas id="ringvorne" aria-hidden="true"></canvas>
@@ -254,7 +254,7 @@ function abbremsen() {
 function zumGlobus() {
   if (zustand === 'globus') return;
   if (!video.ended) video.pause();
-  buehne.style.backgroundImage = 'url(../medien/ende.jpg)'; // Hintergrund = letztes Videobild
+  buehne.style.backgroundImage = 'url(../medien/ende.jpg?v=2)'; // Hintergrund = letztes Videobild
   setzeZustand('globus');
   setTimeout(dreheNachEuropa, 1500); // erst drehen, wenn die Überblendung fertig ist
 }
@@ -380,7 +380,7 @@ let lage = { x: 0, y: 0, r: 100 };
 // Rechter Ringbogen und Stift liegen vor der Kugel: aus dem letzten Videobild ausschneiden und über den 3D-Globus legen
 const ringLeinwand = document.getElementById('ringvorne');
 const endBild = new Image();
-endBild.src = '../medien/ende.jpg';
+endBild.src = '../medien/ende.jpg?v=2';
 endBild.onload = () => anordnen();
 const RING_PUNKTE = []; // Bogen liegt hinter der Kugel
 function zeichneRingVorne(s, ox, oy) {
