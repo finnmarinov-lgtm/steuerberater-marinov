@@ -191,6 +191,17 @@ const VIDEO = { b: 1280, h: 734 };
 const KUGEL = { x: 852, y: 327, r: 204 };
 const ABGLEICH = new URLSearchParams(location.search).has('abgleich');
 
+const ALLE_LABEL = "Всички държави";
+const allgemein = name => ({ name, unter: "Командироване, преместване или пребиваване между Германия и {land}".replace("{land}", name), punkte: ["Първоначална консултация за данъчните и осигурителните последици от престоя в чужбина", "Немски данъчни декларации за ограничено и неограничено данъчно задължени лица", "Освобождаване от данъци според спогодбата за избягване на двойното данъчно облагане, ако има такава", "Социално осигуряване: удостоверения при командироване, възстановяване на вноски", "Въпроси за чуждестранно данъчно право: съдействие чрез международната ни мрежа от данъчни консултанти"], sprache: "Консултации на български, немски и английски език" });
+function fuelleAuswahl() {
+  if (!laender.length) return;
+  landwahl.querySelectorAll("optgroup, option[disabled]").forEach(o => o.remove());
+  const gruppe = document.createElement("optgroup"); gruppe.label = ALLE_LABEL;
+  laender.filter(f => f.id && !(f.id in LAENDER)).map(f => [f.id, landName(f)])
+    .sort((a, b) => a[1].localeCompare(b[1], document.documentElement.lang))
+    .forEach(([id, n]) => { const o = document.createElement("option"); o.value = id; o.textContent = n; gruppe.append(o); });
+  landwahl.append(gruppe);
+}
 const LAENDER = {
  "276": {
   "name": "Германия",
@@ -338,7 +349,7 @@ let laender = [];
 const deNamen = new Intl.DisplayNames(['bg'], { type: 'region' });
 let nummerZuCode = {};
 holen('../assets/lib/codes.json').then(r => r.json())
-  .then(liste => { for (const [a2, , num] of liste) nummerZuCode[num] = a2; }).catch(() => {});
+  .then(liste => { for (const [a2, , num] of liste) nummerZuCode[num] = a2; fuelleAuswahl(); }).catch(() => {});
 function landName(f) {
   if (LAENDER[f.id]) return LAENDER[f.id].name;
   const a2 = nummerZuCode[f.id];
@@ -374,7 +385,7 @@ function maleTextur() {
 
 holen('../assets/lib/countries-50m.json')
   .then(r => r.json())
-  .then(topo => { laender = feature(topo, topo.objects.countries).features; maleTextur(); });
+  .then(topo => { laender = feature(topo, topo.objects.countries).features; maleTextur(); fuelleAuswahl(); });
 
 let lage = { x: 0, y: 0, r: 100 };
 // Rechter Ringbogen und Stift liegen vor der Kugel: aus dem letzten Videobild ausschneiden und über den 3D-Globus legen
@@ -457,7 +468,7 @@ const schild = document.getElementById('landname');
 function zeigeLandname(f, e) {
   if (!f) { schild.classList.remove('zeigen'); return; }
   const b = buehne.getBoundingClientRect();
-  schild.innerHTML = landName(f) + (f.id in LAENDER ? '<small>вижте повече</small>' : '');
+  schild.innerHTML = landName(f) + (f.id ? '<small>вижте повече</small>' : '');
   schild.style.left = (e.clientX - b.left) + 'px';
   schild.style.top = (e.clientY - b.top) + 'px';
   // am rechten Rand das Schild links neben die Maus setzen, damit es nicht abgeschnitten wird
@@ -496,12 +507,11 @@ leinwand.addEventListener('click', e => {
   if (gezogen) { gezogen = false; return; }
   const f = landUnter(e);
   if (!f) return;
-  if (f.id in LAENDER) zeigeLand(f.id);
-  else zeigeMeldung(`${landName(f)}: скоро ще добавим информация – обадете ни се.`);
+  if (f.id) zeigeLand(f.id);
 });
 
 function zeigeLand(id) {
-  const l = LAENDER[id];
+  const l = LAENDER[id] || allgemein(landName(laender.find(x => x.id === id)));
   const f = laender.find(x => x.id === id);
   if (f) { const [cl] = geoCentroid(f); ziel = { lon: cl, neig: NEIG }; }
   inhalt.innerHTML = `
