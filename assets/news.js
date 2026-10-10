@@ -6,6 +6,7 @@
   const datumFormat = new Intl.DateTimeFormat(sprache, { day: 'numeric', month: 'long', year: 'numeric' });
   for (const liste of listen) {
     fetch(liste.dataset.news).then(r => r.ok ? r.json() : Promise.reject(r.status)).then(daten => {
+      if (!daten.meldungen || !daten.meldungen.length) throw new Error('keine Meldungen'); // dann den Hinweis zeigen statt eines leeren Kastens
       liste.textContent = '';
       for (const m of daten.meldungen.slice(0, Number(liste.dataset.anzahl || 6))) {
         const li = document.createElement('li');
