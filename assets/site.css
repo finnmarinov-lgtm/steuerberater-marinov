@@ -36,6 +36,7 @@
   --leiste-hover: #dde2e6;
   --oben: 40px;
   --kopf: 72px;
+  --fest: calc(var(--oben) + var(--kopf)); /* Höhe der beiden Leisten, die beim Scrollen oben stehen bleiben */
   --serif: 'Spectral', 'Palatino Linotype', Georgia, serif;
   --sans: 'Golos Text', 'Segoe UI', system-ui, sans-serif;
   /* vom Startbereich genutzt */
@@ -49,7 +50,7 @@
 /* ---------- Grundlagen */
 *, *::before, *::after { box-sizing: border-box; }
 /* Sprungziele (Kontakt, einzelne Leistung …) landen unterhalb der mitlaufenden Kopfzeile */
-html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--kopf) + 16px); }
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--fest) + 16px); }
 html[data-schrift="gross"] { font-size: 112.5%; }
 body { margin: 0; background: var(--papier); color: var(--tinte); font: 400 1.0625rem/1.72 var(--sans); }
 body.gesperrt { overflow: hidden; }
@@ -64,8 +65,9 @@ a:hover { color: var(--tinte); }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
 
 /* ---------- Leiste oben: Telefon, E-Mail, Suche, Darstellung, Sprache */
-.leiste-oben { background: var(--leiste-bg); color: var(--leiste-text); font-size: .85rem; border-bottom: 1px solid var(--linie); }
-.leiste-oben-innen { max-width: 1440px; margin: 0 auto; height: var(--oben); display: flex; align-items: center; gap: 1.6rem; padding: 0 clamp(16px, 4vw, 48px); }
+/* läuft zusammen mit der Kopfzeile beim Scrollen mit; liegt über ihr, damit das Darstellungsfeld nicht verdeckt wird */
+.leiste-oben { position: sticky; top: 0; z-index: 11; height: var(--oben); background: var(--leiste-bg); color: var(--leiste-text); font-size: .85rem; border-bottom: 1px solid var(--linie); }
+.leiste-oben-innen { max-width: 1440px; margin: 0 auto; height: 100%; display: flex; align-items: center; gap: 1.6rem; padding: 0 clamp(16px, 4vw, 48px); }
 .leiste-oben a { color: var(--leiste-link); text-decoration: none; }
 .leiste-oben a:hover { color: var(--leiste-link); text-decoration: underline; text-underline-offset: .18em; }
 .schnell { display: inline-flex; align-items: center; gap: .45rem; }
@@ -112,8 +114,8 @@ a:hover { color: var(--tinte); }
 @media (max-width: 400px) { .suche-form { display: none; } }
 
 /* ---------- Kopf: Marke, Hauptmenü, Kontakt-Knopf, Menü für schmale Bildschirme */
-/* läuft beim Scrollen mit (bleibt oben stehen); die Leiste darüber scrollt weg */
-.kopf { position: sticky; top: 0; z-index: 10; height: var(--kopf); display: flex; align-items: center; gap: 1.5rem;
+/* läuft beim Scrollen mit: bleibt direkt unter der Leiste oben stehen */
+.kopf { position: sticky; top: calc(var(--fest) - var(--kopf)); z-index: 10; height: var(--kopf); display: flex; align-items: center; gap: 1.5rem;
   padding: 0 clamp(16px, 4vw, 48px); background: var(--flaeche); border-bottom: 1px solid var(--linie); }
 .marke { display: flex; align-items: baseline; gap: .55rem; padding: .4rem 0; color: var(--tinte); text-decoration: none; white-space: nowrap; }
 .marke-name { font: 500 1.35rem/1 var(--serif); letter-spacing: .005em; }
@@ -133,6 +135,11 @@ a:hover { color: var(--tinte); }
 .menue li a { display: block; color: var(--tinte); text-decoration: none; font-size: .98rem; padding: .55rem 1rem; border: 0; }
 .menue li a[aria-current="page"] { color: var(--blau); font-weight: 600; }
 
+/* Sehr niedrige Fenster (Handy quer): nur die Kopfzeile bleibt stehen, sonst wäre zu viel Fläche belegt */
+@media (max-height: 480px) {
+  :root { --fest: var(--kopf); }
+  .leiste-oben { position: static; }
+}
 @media (max-width: 1200px) { .marke-zusatz { display: none; } }
 @media (max-width: 980px) {
   .hauptnav, .kontakt-knopf { display: none; }
@@ -268,7 +275,7 @@ a:hover { color: var(--tinte); }
 .seite.mit-news { max-width: 1400px; display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: clamp(32px, 4vw, 72px); align-items: start; }
 .seite.mit-news.mit-unternav { grid-template-columns: 210px minmax(0, 1fr) 270px; }
 
-.seitenleiste { position: sticky; top: calc(var(--kopf) + 24px); }
+.seitenleiste { position: sticky; top: calc(var(--fest) + 24px); }
 .unternav ul { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--linie); }
 .unternav a { display: block; padding: .55rem 0 .55rem 1.1rem; margin-left: -1px; border-left: 2px solid transparent; color: var(--schiefer); text-decoration: none; font-size: .96rem; line-height: 1.35; }
 .unternav a:hover { color: var(--tinte); }
