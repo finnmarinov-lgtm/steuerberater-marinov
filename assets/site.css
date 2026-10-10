@@ -48,7 +48,8 @@
 
 /* ---------- Grundlagen */
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
+/* Sprungziele (Kontakt, einzelne Leistung …) landen unterhalb der mitlaufenden Kopfzeile */
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: calc(var(--kopf) + 16px); }
 html[data-schrift="gross"] { font-size: 112.5%; }
 body { margin: 0; background: var(--papier); color: var(--tinte); font: 400 1.0625rem/1.72 var(--sans); }
 body.gesperrt { overflow: hidden; }
@@ -111,7 +112,8 @@ a:hover { color: var(--tinte); }
 @media (max-width: 400px) { .suche-form { display: none; } }
 
 /* ---------- Kopf: Marke, Hauptmenü, Kontakt-Knopf, Menü für schmale Bildschirme */
-.kopf { position: relative; z-index: 10; height: var(--kopf); display: flex; align-items: center; gap: 1.5rem;
+/* läuft beim Scrollen mit (bleibt oben stehen); die Leiste darüber scrollt weg */
+.kopf { position: sticky; top: 0; z-index: 10; height: var(--kopf); display: flex; align-items: center; gap: 1.5rem;
   padding: 0 clamp(16px, 4vw, 48px); background: var(--flaeche); border-bottom: 1px solid var(--linie); }
 .marke { display: flex; align-items: baseline; gap: .55rem; padding: .4rem 0; color: var(--tinte); text-decoration: none; white-space: nowrap; }
 .marke-name { font: 500 1.35rem/1 var(--serif); letter-spacing: .005em; }
@@ -137,6 +139,7 @@ a:hover { color: var(--tinte); }
   .menue { display: block; }
 }
 @media (max-width: 560px) {
+  :root { --kopf: 60px; } /* am Handy flacher, weil die Kopfzeile immer sichtbar bleibt */
   .kopf { padding: 0 16px; gap: .5rem; }
   .marke-name { font-size: 1.12rem; }
   .menue summary { padding: .35rem .6rem; }
@@ -265,7 +268,7 @@ a:hover { color: var(--tinte); }
 .seite.mit-news { max-width: 1400px; display: grid; grid-template-columns: minmax(0, 1fr) 270px; gap: clamp(32px, 4vw, 72px); align-items: start; }
 .seite.mit-news.mit-unternav { grid-template-columns: 210px minmax(0, 1fr) 270px; }
 
-.seitenleiste { position: sticky; top: 32px; }
+.seitenleiste { position: sticky; top: calc(var(--kopf) + 24px); }
 .unternav ul { list-style: none; margin: 0; padding: 0; border-left: 1px solid var(--linie); }
 .unternav a { display: block; padding: .55rem 0 .55rem 1.1rem; margin-left: -1px; border-left: 2px solid transparent; color: var(--schiefer); text-decoration: none; font-size: .96rem; line-height: 1.35; }
 .unternav a:hover { color: var(--tinte); }
