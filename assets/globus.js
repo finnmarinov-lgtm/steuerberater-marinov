@@ -194,7 +194,7 @@ function maleTextur() {
   idTex.needsUpdate = true;
 }
 
-holen(bibliothek('countries-50m.json'))
+holen(bibliothek('laender.json')) // vereinfacht aus world-atlas 1:50 Mio. (werkzeug/karte_vereinfachen.py)
   .then(r => r.json())
   .then(topo => { laender = feature(topo, topo.objects.countries).features; maleTextur(); fuelleAuswahl(); });
 
@@ -426,3 +426,5 @@ if (ABGLEICH) {
 let schonDa = false;
 try { schonDa = !!sessionStorage.getItem('mp-besucht'); } catch (e) { /* ohne Speicher: Fahrt wird gezeigt */ }
 if ((schonDa || matchMedia('(prefers-reduced-motion: reduce)').matches) && !ABGLEICH) { video.style.display = 'none'; zumGlobus(); }
+// Nur wer die Fahrt wirklich sieht, lädt das Video (im HTML steht preload="none")
+else if (!ABGLEICH) { video.preload = 'auto'; video.load(); }

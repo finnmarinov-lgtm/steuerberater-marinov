@@ -145,7 +145,7 @@ a:hover { color: var(--tinte); }
 /* ---------- Startseite: Bühne mit Kamerafahrt und Globus (Skript: assets/globus.js)
    Zustände an #buehne: .start (Startbild) → .fahrt (Video läuft) → .globus (3D-Globus über dem letzten Videobild) */
 #buehne { --bildpos: 50% 50%; position: relative; height: calc(100vh - var(--kopf) - var(--oben)); height: calc(100svh - var(--kopf) - var(--oben)); overflow: hidden;
-  background: #dcdcda url(../medien/anfang.jpg?v=2) no-repeat; background-size: cover; background-position: var(--bildpos); }
+  background: #dcdcda url(../medien/anfang.jpg?v=3) no-repeat; background-size: cover; background-position: var(--bildpos); }
 #fahrt { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: var(--bildpos); transition: opacity 1.4s cubic-bezier(.4, 0, .2, 1); }
 #globus { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; transition: opacity 1.4s cubic-bezier(.4, 0, .2, 1); touch-action: none; }
 #globus:focus-visible { outline-offset: -4px; }
