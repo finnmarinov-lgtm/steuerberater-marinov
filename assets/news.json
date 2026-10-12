@@ -2,6 +2,21 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "BFH: Organschaft und finanzielle Eingliederung",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/finanzielle-eingliederung-im-falle-einer-mehrheitsbeteiligung_166_700208.html",
+   "datum": "2026-10-12"
+  },
+  {
+   "titel": "BFH: Bestimmung des Werts eines Kommanditanteils mit negativem Kapitalkonto",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/bewertung-eines-kommanditanteils-mit-negativem-kapitalkonto_166_700204.html",
+   "datum": "2026-10-12"
+  },
+  {
+   "titel": "BFH: Betriebsausgabenabzug und Rückstellung für die Vergütung des Insolvenzverwalters",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/rueckstellung-fuer-die-verguetung-des-insolvenzverwalters_166_700064.html",
+   "datum": "2026-10-12"
+  },
+  {
    "titel": "Bundestag: Automatischer Informationsaustausch zu Kryptowerten",
    "link": "https://www.haufe.de/steuern/gesetzgebung-politik/automatischer-informationsaustausch-zu-finanzkonten_168_680668.html",
    "datum": "2026-10-09"
@@ -24,21 +39,6 @@
   {
    "titel": "BFH Pressemitteilung: Zur Anrechnung von in der Schweiz gezahlten Familienleistungen",
    "link": "https://www.haufe.de/steuern/rechtsprechung/berechnung-des-differenzkindergeldes_166_700070.html",
-   "datum": "2026-10-08"
-  },
-  {
-   "titel": "BFH Pressemitteilung: Betriebsausgabenabzug und Rückstellung für die Vergütung des Insolvenzverwalters",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/rueckstellung-fuer-die-verguetung-des-insolvenzverwalters_166_700064.html",
-   "datum": "2026-10-08"
-  },
-  {
-   "titel": "BFH: Alle am 8.10.2026 veröffentlichten Entscheidungen",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/bfh-alle-am-8102026-veroeffentlichten-entscheidungen_166_699962.html",
-   "datum": "2026-10-08"
-  },
-  {
-   "titel": "BayLfSt: Gestellung arbeitstäglicher Mahlzeiten durch den Arbeitgeber",
-   "link": "https://www.haufe.de/steuern/finanzverwaltung/gestellung-arbeitstaeglicher-mahlzeiten-durch-den-arbeitgeber_164_698648.html",
    "datum": "2026-10-08"
   }
  ]
