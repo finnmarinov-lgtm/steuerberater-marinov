@@ -2,6 +2,26 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "Warum der Rechtstypenvergleich entscheidet: Die US-LLC aus deutscher Sicht",
+   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/die-us-llc-aus-deutscher-sicht_170_698704.html",
+   "datum": "2026-10-13"
+  },
+  {
+   "titel": "FG Münster: Hinzurechnung fiktiver Betriebsausgaben bei Zuordnung zu DBA-Betriebsstätte",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/hinzurechnung-fiktiver-betriebsausgaben-bei-dba-freistellung_166_691836.html",
+   "datum": "2026-10-13"
+  },
+  {
+   "titel": "BMF: Zuständige Finanzämter für grenzüberschreitende Personenbeförderung",
+   "link": "https://www.haufe.de/steuern/finanzverwaltung/finanzaemter-grenzueberschreitende-personenbefoerderung_164_700324.html",
+   "datum": "2026-10-13"
+  },
+  {
+   "titel": "Bundesregierung: Regierungsentwurf zur Reform der Steuerberaterprüfung",
+   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/bmf-referentenentwurf-zur-reform-der-steuerberaterpruefung_168_696282.html",
+   "datum": "2026-10-12"
+  },
+  {
    "titel": "BFH: Organschaft und finanzielle Eingliederung",
    "link": "https://www.haufe.de/steuern/rechtsprechung/finanzielle-eingliederung-im-falle-einer-mehrheitsbeteiligung_166_700208.html",
    "datum": "2026-10-12"
@@ -20,26 +40,6 @@
    "titel": "Bundestag: Automatischer Informationsaustausch zu Kryptowerten",
    "link": "https://www.haufe.de/steuern/gesetzgebung-politik/automatischer-informationsaustausch-zu-finanzkonten_168_680668.html",
    "datum": "2026-10-09"
-  },
-  {
-   "titel": "Bundestag: Automatischer Informationsaustausch zu Einkünften über digitale Plattformen",
-   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/automatischer-informationsaustausch-digitale-plattformen_168_680686.html",
-   "datum": "2026-10-09"
-  },
-  {
-   "titel": "FG Düsseldorf: Keine erweiterte Gewerbeertragskürzung bei Mitvermietung einer Betriebsvorrichtung",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/schaedliche-betriebsvorrichtungen-fuer-die-erweiterte-kuerzung_166_698188.html",
-   "datum": "2026-10-09"
-  },
-  {
-   "titel": "Deutscher Steuerberatertag 2026: Vertrauen ist das neue Öl",
-   "link": "https://www.haufe.de/steuern/taxulting/deutscher-steuerberatertag-2026-vertrauen-ist-das-neue-oel_598848_700122.html",
-   "datum": "2026-10-08"
-  },
-  {
-   "titel": "BFH Pressemitteilung: Zur Anrechnung von in der Schweiz gezahlten Familienleistungen",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/berechnung-des-differenzkindergeldes_166_700070.html",
-   "datum": "2026-10-08"
   }
  ]
 }
