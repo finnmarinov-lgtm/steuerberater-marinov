@@ -2,6 +2,26 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "BFH: Alle am 15.10.2026 veröffentlichten Entscheidungen",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/bfh-alle-am-15102026-veroeffentlichten-entscheidungen_166_700596.html",
+   "datum": "2026-10-15"
+  },
+  {
+   "titel": "Lebenslanges Lernen: Wie Kanzleien Fortbildung zur Gewohnheit machen",
+   "link": "https://www.haufe.de/steuern/taxulting/wie-kanzleien-fortbildung-zur-gewohnheit-machen_598848_700576.html",
+   "datum": "2026-10-15"
+  },
+  {
+   "titel": "Serie: Ausländische Unternehmen in Deutschland: Der Gewinn der deutschen Betriebsstätte - KSt, GewSt und USt",
+   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/der-gewinn-der-deutschen-betriebsstaette-kst-gewst-und-ust_170_700346.html",
+   "datum": "2026-10-15"
+  },
+  {
+   "titel": "Bundesregierung: Einführung einer Zuckergetränkesteuer",
+   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/bundeskabinett-einfuehrung-einer-zuckergetraenkesteuer_168_700512.html",
+   "datum": "2026-10-15"
+  },
+  {
    "titel": "Jahressteuergesetz 2026: Neuer § 6f EStG: Kaufpreisaufteilung bei bebauten Grundstücken",
    "link": "https://www.haufe.de/steuern/gesetzgebung-politik/neuer-6f-estg-kaufpreisaufteilung-bei-bebauten-grundstuecken_168_700322.html",
    "datum": "2026-10-14"
@@ -20,26 +40,6 @@
    "titel": "BMF: Unterbringung von Kriegsflüchtlingen aus der Ukraine",
    "link": "https://www.haufe.de/steuern/bmf-unterbringung-von-kriegsfluechtlingen-aus-der-ukraine_172_700444.html",
    "datum": "2026-10-14"
-  },
-  {
-   "titel": "Temporäre Hilfen, dauerhafte Probleme: Lehren aus der Inflationsausgleichsprämie",
-   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/datev-analyse-mit-lehren-aus-der-inflationsausgleichspraemie_170_700386.html",
-   "datum": "2026-10-14"
-  },
-  {
-   "titel": "BMF: Entwürfe zu den Programmablaufplänen zur Lohnsteuer 2027",
-   "link": "https://www.haufe.de/steuern/finanzverwaltung/bmf-programmablaufplaene-zur-lohnsteuer_164_700426.html",
-   "datum": "2026-10-14"
-  },
-  {
-   "titel": "BMF: Unterbringung von Kriegsflüchtlingen aus der Ukraine",
-   "link": "https://www.haufe.de/steuern/finanzverwaltung/unterbringung-von-kriegsfluechtlingen-aus-der-ukraine_164_564392.html",
-   "datum": "2026-10-14"
-  },
-  {
-   "titel": "Warum der Rechtstypenvergleich entscheidet: Die US-LLC aus deutscher Sicht",
-   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/die-us-llc-aus-deutscher-sicht_170_698704.html",
-   "datum": "2026-10-13"
   }
  ]
 }
