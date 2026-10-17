@@ -2,6 +2,11 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "Bundestag: Gesetz zur Einführung einer Frühstartrente",
+   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/bmf-refrentenentwurf-gesetz-zur-einfuehrung-einer-fruehstartrente_168_692522.html",
+   "datum": "2026-10-16"
+  },
+  {
    "titel": "BMF: Ergänzende Regelungen zur E-Rechnung",
    "link": "https://www.haufe.de/steuern/finanzverwaltung/bmf-ergaenzende-regelungen-zur-e-rechnung_164_700638.html",
    "datum": "2026-10-16"
@@ -34,11 +39,6 @@
   {
    "titel": "Serie: Ausländische Unternehmen in Deutschland: Der Gewinn der deutschen Betriebsstätte - KSt, GewSt und USt",
    "link": "https://www.haufe.de/steuern/steuerwissen-tipps/der-gewinn-der-deutschen-betriebsstaette-kst-gewst-und-ust_170_700346.html",
-   "datum": "2026-10-15"
-  },
-  {
-   "titel": "Bundesregierung: Einführung einer Zuckergetränkesteuer",
-   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/bundeskabinett-einfuehrung-einer-zuckergetraenkesteuer_168_700512.html",
    "datum": "2026-10-15"
   }
  ]
