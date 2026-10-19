@@ -2,6 +2,26 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "BMF: Bericht zur Evaluation des Forschungszulagengesetzes",
+   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/bmf-bericht-zur-evaluation-des-forschungszulagengesetzes_168_700684.html",
+   "datum": "2026-10-19"
+  },
+  {
+   "titel": "Änderungsvorschläge: Bundesrat nimmt Stellung zum Einkommensteuerreformgesetz 2027",
+   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/bundesrat-nimmt-stellung-zum-einkommensteuerreformgesetz-2027_168_700990.html",
+   "datum": "2026-10-19"
+  },
+  {
+   "titel": "FG Düsseldorf: Keine Steuerermäßigung bei Installation einer Photovoltaikanlage mit Stromspeicher",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/steuerermaessigung-photovoltaikanlage-mit-stromspeicher_166_700674.html",
+   "datum": "2026-10-19"
+  },
+  {
+   "titel": "BFH: Schenkungsteuer für eine vGA und Grunderwerbsteuer",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/widerstreitende-steuerfestsetzung_166_700632.html",
+   "datum": "2026-10-19"
+  },
+  {
    "titel": "Bundestag: Gesetz zur Einführung einer Frühstartrente",
    "link": "https://www.haufe.de/steuern/gesetzgebung-politik/bmf-refrentenentwurf-gesetz-zur-einfuehrung-einer-fruehstartrente_168_692522.html",
    "datum": "2026-10-16"
@@ -20,26 +40,6 @@
    "titel": "Bekämpfung von Steuervermeidung: Aktualisierte EU-Liste nicht kooperativer Länder und Gebiete",
    "link": "https://www.haufe.de/steuern/gesetzgebung-politik/eu-liste-nicht-kooperativer-laender-und-gebiete_168_509846.html",
    "datum": "2026-10-16"
-  },
-  {
-   "titel": "FG Münster: Entnahmen zur Zahlung von Erbschaft- und Schenkungsteuer",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/entnahmen-zur-zahlung-von-erbschaft-und-schenkungsteuer_166_700616.html",
-   "datum": "2026-10-16"
-  },
-  {
-   "titel": "BFH: Alle am 15.10.2026 veröffentlichten Entscheidungen",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/bfh-alle-am-15102026-veroeffentlichten-entscheidungen_166_700596.html",
-   "datum": "2026-10-15"
-  },
-  {
-   "titel": "Lebenslanges Lernen: Wie Kanzleien Fortbildung zur Gewohnheit machen",
-   "link": "https://www.haufe.de/steuern/taxulting/wie-kanzleien-fortbildung-zur-gewohnheit-machen_598848_700576.html",
-   "datum": "2026-10-15"
-  },
-  {
-   "titel": "Serie: Ausländische Unternehmen in Deutschland: Der Gewinn der deutschen Betriebsstätte - KSt, GewSt und USt",
-   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/der-gewinn-der-deutschen-betriebsstaette-kst-gewst-und-ust_170_700346.html",
-   "datum": "2026-10-15"
   }
  ]
 }
