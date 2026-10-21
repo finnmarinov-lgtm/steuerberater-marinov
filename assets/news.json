@@ -2,6 +2,31 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "BMF Referentenentwurf: Vierte Verordnung zur Änderung der Steueroasen-Abwehrverordnung",
+   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/vierte-verordnung-zur-aenderung-der-steueroasen-abwehrverordnung_168_701248.html",
+   "datum": "2026-10-21"
+  },
+  {
+   "titel": "BMF: Modifizierte Trennungstheorie bei teilentgeltlichen Übertragungen",
+   "link": "https://www.haufe.de/steuern/finanzverwaltung/teilentgeltliche-uebertragung-modifizierte-trennungstheorie_164_701206.html",
+   "datum": "2026-10-21"
+  },
+  {
+   "titel": "Serie: Schlussabrechnungen der Coronahilfen: Corona-Hilfen: Ab wann eine Rückstellung für die Rückforderung möglich ist",
+   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/rueckstellung-fuer-rueckforderung-von-corona-hilfe_170_701170.html",
+   "datum": "2026-10-21"
+  },
+  {
+   "titel": "BMF: Kopplungsgeschäfte bei einem Investmentfonds",
+   "link": "https://www.haufe.de/steuern/finanzverwaltung/bmf-kopplungsgeschaefte-bei-einem-investmentfonds_164_701204.html",
+   "datum": "2026-10-21"
+  },
+  {
+   "titel": "Sächsisches FG: Bereitstellung von Gesundheits-Apps ist umsatzsteuerpflichtig",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/bereitstellung-von-gesundheits-apps-ist-umsatzsteuerpflichtig_166_701174.html",
+   "datum": "2026-10-21"
+  },
+  {
    "titel": "BMF: Einlagekonto bei Umlaufgeschäften mit eigenen Anteilen",
    "link": "https://www.haufe.de/steuern/finanzverwaltung/bmf-einlagekonto-bei-umlaufgeschaeften-mit-eigenen-anteilen_164_701084.html",
    "datum": "2026-10-20"
@@ -15,31 +40,6 @@
    "titel": "LSt Niedersachsen: Umsatzsteuer bei Schul- und Kitaverkäufen",
    "link": "https://www.haufe.de/steuern/finanzverwaltung/lst-niedersachsen-umsatzsteuer-bei-schul-und-kitaverkaeufen_164_699928.html",
    "datum": "2026-10-20"
-  },
-  {
-   "titel": "FG München: Urlaubsgästekarte als Mehrzweckgutschein",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/fg-muenchen-urlaubsgaestekarte-als-mehrzweckgutschein_166_697986.html",
-   "datum": "2026-10-20"
-  },
-  {
-   "titel": "Verhör(t) – Steuerthemen auf der Spur: Podcast: Macht KI die Steuerberatung persönlicher?",
-   "link": "https://www.haufe.de/steuern/taxulting/podcast-macht-ki-die-steuerberatung-persoenlicher_598848_701010.html",
-   "datum": "2026-10-20"
-  },
-  {
-   "titel": "Bundesrat: Sachbezugswerte 2027 für Verpflegung und Unterkunft",
-   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/sachbezugswerte_168_701042.html",
-   "datum": "2026-10-19"
-  },
-  {
-   "titel": "BMF: Bericht zur Evaluation des Forschungszulagengesetzes",
-   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/bmf-bericht-zur-evaluation-des-forschungszulagengesetzes_168_700684.html",
-   "datum": "2026-10-19"
-  },
-  {
-   "titel": "Änderungsvorschläge: Bundesrat nimmt Stellung zum Einkommensteuerreformgesetz 2027",
-   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/bundesrat-nimmt-stellung-zum-einkommensteuerreformgesetz-2027_168_700990.html",
-   "datum": "2026-10-19"
   }
  ]
 }
