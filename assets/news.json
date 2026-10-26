@@ -2,6 +2,21 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "Überblick zur aktuellen Rechtsprechung: Bescheidberichtigung nach § 129 AO bei offenbaren Unrichtigkeiten",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/bescheidberichtigung-nach-129-ao_166_698678.html",
+   "datum": "2026-10-26"
+  },
+  {
+   "titel": "FG Münster: Hinzurechnung fiktiver Betriebsausgaben bei Zuordnung zu DBA-Betriebsstätte",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/hinzurechnung-fiktiver-betriebsausgaben-bei-dba-freistellung_166_691836.html",
+   "datum": "2026-10-26"
+  },
+  {
+   "titel": "BFH: Verfahrensrechtliche Folgewirkung einer vGA",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/bfh-verfahrensrechtliche-folgewirkung-einer-vga_166_701658.html",
+   "datum": "2026-10-26"
+  },
+  {
    "titel": "BMF: Vermietung von Betriebsvorrichtungen",
    "link": "https://www.haufe.de/steuern/finanzverwaltung/umsatzsteuerbefreiung-fuer-vermietung-von-betriebsvorrichtungen_164_701330.html",
    "datum": "2026-10-23"
@@ -25,21 +40,6 @@
    "titel": "Digitalisierung: Verpflichtung zur Führung elektronischer Entgeltunterlagen",
    "link": "https://www.haufe.de/steuern/steuerwissen-tipps/elektronische-entgeltunterlagen_170_701482.html",
    "datum": "2026-10-23"
-  },
-  {
-   "titel": "BMF: Neue Vordruckmuster für die Umsatzsteuer-Sonderprüfung",
-   "link": "https://www.haufe.de/steuern/finanzverwaltung/vordruckmuster-ust-7-a-7-b-und-7-d-aktualisiert_164_701442.html",
-   "datum": "2026-10-23"
-  },
-  {
-   "titel": "Verpflichtung seit 1.1.2025: E-Rechnung im Überblick",
-   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/elektronische-rechnung-wird-pflicht-e-rechnung-im-ueberblick_168_605558.html",
-   "datum": "2026-10-22"
-  },
-  {
-   "titel": "BFH: Alle am 22.10.2026 veröffentlichten Entscheidungen",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/bfh-alle-am-22102026-veroeffentlichten-entscheidungen_166_701400.html",
-   "datum": "2026-10-22"
   }
  ]
 }
