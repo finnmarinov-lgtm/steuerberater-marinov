@@ -2,6 +2,26 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "Stand der Umsetzung und Herausforderungen: Die E-Rechnung in der Praxis",
+   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/die-e-rechnung-in-der-praxis_170_701616.html",
+   "datum": "2026-10-27"
+  },
+  {
+   "titel": "BMF: Neufassung der Digitalen Schnittstelle der Finanzverwaltung für Kassensysteme",
+   "link": "https://www.haufe.de/steuern/finanzverwaltung/digitalen-schnittstelle-der-finanzverwaltung-fuer-kassensysteme_164_701684.html",
+   "datum": "2026-10-27"
+  },
+  {
+   "titel": "FG Münster: Entstehung junger Finanzmittel i. S. d. ErbStG",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/fg-muenster-entstehung-junger-finanzmittel-i-s-d-erbstg_166_695170.html",
+   "datum": "2026-10-27"
+  },
+  {
+   "titel": "BMF: Entgeltlicher Nießbrauchsverzicht an Mietgrundstücken",
+   "link": "https://www.haufe.de/steuern/finanzverwaltung/bmf-entgeltlicher-niessbrauchsverzicht-an-mietgrundstuecken_164_701668.html",
+   "datum": "2026-10-26"
+  },
+  {
    "titel": "Überblick zur aktuellen Rechtsprechung: Bescheidberichtigung nach § 129 AO bei offenbaren Unrichtigkeiten",
    "link": "https://www.haufe.de/steuern/rechtsprechung/bescheidberichtigung-nach-129-ao_166_698678.html",
    "datum": "2026-10-26"
@@ -19,26 +39,6 @@
   {
    "titel": "BMF: Vermietung von Betriebsvorrichtungen",
    "link": "https://www.haufe.de/steuern/finanzverwaltung/umsatzsteuerbefreiung-fuer-vermietung-von-betriebsvorrichtungen_164_701330.html",
-   "datum": "2026-10-23"
-  },
-  {
-   "titel": "Welche Besteuerungsrechte fortbestehen: Deutschland nach dem Wegzug",
-   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/welche-besteuerungsrechte-nach-dem-wegzug-fortbestehen_170_700190.html",
-   "datum": "2026-10-23"
-  },
-  {
-   "titel": "BMF: Buchführung in land- und forstwirtschaftlichen Betrieben",
-   "link": "https://www.haufe.de/steuern/finanzverwaltung/buchfuehrung-in-land-und-forstwirtschaftlichen-betrieben_164_701480.html",
-   "datum": "2026-10-23"
-  },
-  {
-   "titel": "BMF: Voraussetzungen der Tonnagesteuer nach § 5a EStG",
-   "link": "https://www.haufe.de/steuern/finanzverwaltung/voraussetzungen-der-tonnagesteuer-nach-5a-estg_164_701492.html",
-   "datum": "2026-10-23"
-  },
-  {
-   "titel": "Digitalisierung: Verpflichtung zur Führung elektronischer Entgeltunterlagen",
-   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/elektronische-entgeltunterlagen_170_701482.html",
    "datum": "2026-10-23"
   }
  ]
