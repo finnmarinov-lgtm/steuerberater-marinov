@@ -2,6 +2,21 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "Entscheidend ist der Tätigkeitsschwerpunkt: Familienheimfahrten eines Selbstständigen",
+   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/familienheimfahrten-eines-selbststaendigen_170_701180.html",
+   "datum": "2026-10-28"
+  },
+  {
+   "titel": "FG Münster : Maßgeblicher Betrachtungszeitpunkt einer Einbringung",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/betrachtungszeitpunkt-einer-einbringung_166_700146.html",
+   "datum": "2026-10-28"
+  },
+  {
+   "titel": "Serie: Schlussabrechnungen der Coronahilfen: Neustarthilfe Plus: Der Steuerbescheid entscheidet über den Haupterwerb",
+   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/neustarthilfe-nur-fuer-haupterwerb-laut-steuerbescheid_170_701736.html",
+   "datum": "2026-10-28"
+  },
+  {
    "titel": "Stand der Umsetzung und Herausforderungen: Die E-Rechnung in der Praxis",
    "link": "https://www.haufe.de/steuern/steuerwissen-tipps/die-e-rechnung-in-der-praxis_170_701616.html",
    "datum": "2026-10-27"
@@ -25,21 +40,6 @@
    "titel": "Überblick zur aktuellen Rechtsprechung: Bescheidberichtigung nach § 129 AO bei offenbaren Unrichtigkeiten",
    "link": "https://www.haufe.de/steuern/rechtsprechung/bescheidberichtigung-nach-129-ao_166_698678.html",
    "datum": "2026-10-26"
-  },
-  {
-   "titel": "FG Münster: Hinzurechnung fiktiver Betriebsausgaben bei Zuordnung zu DBA-Betriebsstätte",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/hinzurechnung-fiktiver-betriebsausgaben-bei-dba-freistellung_166_691836.html",
-   "datum": "2026-10-26"
-  },
-  {
-   "titel": "BFH: Verfahrensrechtliche Folgewirkung einer vGA",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/bfh-verfahrensrechtliche-folgewirkung-einer-vga_166_701658.html",
-   "datum": "2026-10-26"
-  },
-  {
-   "titel": "BMF: Vermietung von Betriebsvorrichtungen",
-   "link": "https://www.haufe.de/steuern/finanzverwaltung/umsatzsteuerbefreiung-fuer-vermietung-von-betriebsvorrichtungen_164_701330.html",
-   "datum": "2026-10-23"
   }
  ]
 }
