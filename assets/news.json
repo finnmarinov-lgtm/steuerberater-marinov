@@ -2,6 +2,21 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "BMF: Bewertung einer lebenslänglichen Nutzung oder Leistung für Stichtage ab 1.1.2027",
+   "link": "https://www.haufe.de/steuern/finanzverwaltung/bewertung-einer-lebenslaenglichen-nutzung-oder-leistung_164_552580.html",
+   "datum": "2026-10-30"
+  },
+  {
+   "titel": "FG Köln: Unentgeltliche Überlassung eines Fahrzeugs an nahe Angehörige",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/unentgeltliche-ueberlassung-eines-fahrzeugs-an-tochter_166_701050.html",
+   "datum": "2026-10-30"
+  },
+  {
+   "titel": "FG Berlin-Brandenburg: Kein Vorsteuerabzug bei Angabe eines künftigen Firmennamens",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/vorsteuerabzug-bei-falschem-firmennamen_166_701040.html",
+   "datum": "2026-10-30"
+  },
+  {
    "titel": "BFH Pressemitteilung: Flugzeug am Stationierungsflughafen in der Parkposition als erste Tätigkeitsstätte eines Piloten",
    "link": "https://www.haufe.de/steuern/rechtsprechung/erste-taetigkeitsstaette-eines-flugzeugfuehrers_166_702084.html",
    "datum": "2026-10-29"
@@ -24,21 +39,6 @@
   {
    "titel": "BFH: Alle am 29.10.2026 veröffentlichten Entscheidungen",
    "link": "https://www.haufe.de/steuern/rechtsprechung/bfh-alle-am-29102026-veroeffentlichten-entscheidungen_166_702060.html",
-   "datum": "2026-10-29"
-  },
-  {
-   "titel": "Serie: Ausländische Unternehmen in Deutschland: Risiken bei deutschen Betriebsstätten ausländischer Unternehmen",
-   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/deutschen-betriebsstaetten-auslaendischer-unternehmen-risiken_170_701718.html",
-   "datum": "2026-10-29"
-  },
-  {
-   "titel": "Cybersicherheit : Wie KI Cyberangriffe verändert – und was es für Steuerkanzleien bedeutet",
-   "link": "https://www.haufe.de/steuern/taxulting/was-steuerkanzleien-zu-ki-und-cybersicherheit-wissen-muessen_598848_702048.html",
-   "datum": "2026-10-29"
-  },
-  {
-   "titel": "BMF: Überarbeitetes Schreiben zum Forschungszulagengesetz",
-   "link": "https://www.haufe.de/steuern/finanzverwaltung/bmf-veroeffentlicht-schreiben-zum-forschungszulagengesetz_164_555394.html",
    "datum": "2026-10-29"
   }
  ]
