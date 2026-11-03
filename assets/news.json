@@ -2,13 +2,28 @@
  "quelle": "Haufe",
  "meldungen": [
   {
-   "titel": "BFH: Verwendung des Altersvorsorgevermögens für Darlehenstilgung durch Erben",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/riester-foerderung_166_702186.html",
-   "datum": "2026-11-02"
+   "titel": "Verhör(t) – Steuerthemen auf der Spur: Podcast: Buchhaltung im E-Commerce – warum Automatisierung nicht bei KI beginnt",
+   "link": "https://www.haufe.de/steuern/taxulting/podcast-e-commerce-buchhaltung-was-kanzleien-wissen-muessen_598848_702212.html",
+   "datum": "2026-11-03"
   },
   {
-   "titel": "BFH: Voraussetzungen für den Eintritt der Ablaufhemmung bei Ermittlungen der Steuerfahndung",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/eintritt-der-ablaufhemmung-bei-ermittlungen-der-steuerfahndung_166_702076.html",
+   "titel": "FG Düsseldorf: Rückwirkung einer nachträglichen Verzinsungs- und Aufhebungsvereinbarung",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/rueckwirkung-einer-nachtraeglichen-zinsvereinbarung_166_701488.html",
+   "datum": "2026-11-03"
+  },
+  {
+   "titel": "Rechtsformneutralität der Besteuerung in Gefahr: DStV nimmt zum Einkommensteuerreformgesetz 2027 Stellung",
+   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/dstv-nimmt-zum-einkommensteuerreformgesetz-2027-stellung_168_702242.html",
+   "datum": "2026-11-03"
+  },
+  {
+   "titel": "Warnung vor neuen Bürokratielasten: DStV nimmt zum Jahressteuergesetz 2026 Stellung",
+   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/dstv-nimmt-zum-jahressteuergesetz-2026-stellung_168_702234.html",
+   "datum": "2026-11-03"
+  },
+  {
+   "titel": "BFH: Verwendung des Altersvorsorgevermögens für Darlehenstilgung durch Erben",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/riester-foerderung_166_702186.html",
    "datum": "2026-11-02"
   },
   {
@@ -17,29 +32,14 @@
    "datum": "2026-11-02"
   },
   {
-   "titel": "BMF Referententwurf: Gesetz zur Umsetzung der Sechsten EU-Geldwäscherichtlinie",
-   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/gesetz-zur-umsetzung-der-sechsten-eu-geldwaescherichtlinie_168_702140.html",
+   "titel": "BFH: Voraussetzungen für den Eintritt der Ablaufhemmung bei Ermittlungen der Steuerfahndung",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/eintritt-der-ablaufhemmung-bei-ermittlungen-der-steuerfahndung_166_702076.html",
    "datum": "2026-11-02"
   },
   {
-   "titel": "BMF: Neufassung der Digitalen Schnittstelle der Finanzverwaltung für Kassensysteme",
-   "link": "https://www.haufe.de/steuern/finanzverwaltung/digitalen-schnittstelle-der-finanzverwaltung-fuer-kassensysteme_164_701684.html",
-   "datum": "2026-11-01"
-  },
-  {
-   "titel": "BMF: Bewertung einer lebenslänglichen Nutzung oder Leistung für Stichtage ab 1.1.2027",
-   "link": "https://www.haufe.de/steuern/finanzverwaltung/bewertung-einer-lebenslaenglichen-nutzung-oder-leistung_164_552580.html",
-   "datum": "2026-10-30"
-  },
-  {
-   "titel": "FG Köln: Unentgeltliche Überlassung eines Fahrzeugs an nahe Angehörige",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/unentgeltliche-ueberlassung-eines-fahrzeugs-an-tochter_166_701050.html",
-   "datum": "2026-10-30"
-  },
-  {
-   "titel": "FG Berlin-Brandenburg: Kein Vorsteuerabzug bei Angabe eines künftigen Firmennamens",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/vorsteuerabzug-bei-falschem-firmennamen_166_701040.html",
-   "datum": "2026-10-30"
+   "titel": "BMF Referententwurf: Neues Geldwäschebekämpfungsgesetz",
+   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/gesetz-zur-umsetzung-der-sechsten-eu-geldwaescherichtlinie_168_702140.html",
+   "datum": "2026-11-02"
   }
  ]
 }
