@@ -2,6 +2,31 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "Bundesregierung: Umsatzsteuerliche Behandlung von Mitgliedsbeiträgen",
+   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/umsatzsteuerliche-behandlung-von-mitgliedsbeitraegen_168_702350.html",
+   "datum": "2026-11-04"
+  },
+  {
+   "titel": "BMF: Vorsteuerabzug aus Insolvenzverwalterleistungen",
+   "link": "https://www.haufe.de/steuern/finanzverwaltung/bmf-vorsteuerabzug-aus-insolvenzverwalterleistungen_164_702332.html",
+   "datum": "2026-11-04"
+  },
+  {
+   "titel": "Serie: Schlussabrechnungen der Coronahilfen: Neustarthilfe: Antragsberechtigung nur per Rücknahme korrigierbar",
+   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/antragsberechtigung-nur-per-ruecknahme-korrigierbar_170_702252.html",
+   "datum": "2026-11-04"
+  },
+  {
+   "titel": "Niedersächsisches FG: Steuerhinterziehung durch Angabe falscher Entfernungskilometer",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/falsche-kilometerangabe-fuehrt-zu-steuerhinterziehung_166_701468.html",
+   "datum": "2026-11-04"
+  },
+  {
+   "titel": "Klimarisiken für Staatsfinanzen: WIIW-Studie: Klimawandel kostet Staaten Milliarden an Steuereinnahmen",
+   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/wiiw-studie-fiskalische-folgen-des-klimawandels_168_702256.html",
+   "datum": "2026-11-04"
+  },
+  {
    "titel": "Verhör(t) – Steuerthemen auf der Spur: Podcast: Buchhaltung im E-Commerce – warum Automatisierung nicht bei KI beginnt",
    "link": "https://www.haufe.de/steuern/taxulting/podcast-e-commerce-buchhaltung-was-kanzleien-wissen-muessen_598848_702212.html",
    "datum": "2026-11-03"
@@ -15,31 +40,6 @@
    "titel": "Rechtsformneutralität der Besteuerung in Gefahr: DStV nimmt zum Einkommensteuerreformgesetz 2027 Stellung",
    "link": "https://www.haufe.de/steuern/gesetzgebung-politik/dstv-nimmt-zum-einkommensteuerreformgesetz-2027-stellung_168_702242.html",
    "datum": "2026-11-03"
-  },
-  {
-   "titel": "Warnung vor neuen Bürokratielasten: DStV nimmt zum Jahressteuergesetz 2026 Stellung",
-   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/dstv-nimmt-zum-jahressteuergesetz-2026-stellung_168_702234.html",
-   "datum": "2026-11-03"
-  },
-  {
-   "titel": "BFH: Verwendung des Altersvorsorgevermögens für Darlehenstilgung durch Erben",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/riester-foerderung_166_702186.html",
-   "datum": "2026-11-02"
-  },
-  {
-   "titel": "BFH: Flugzeug am Stationierungsflughafen in der Parkposition als erste Tätigkeitsstätte eines Piloten",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/erste-taetigkeitsstaette-eines-flugzeugfuehrers_166_702084.html",
-   "datum": "2026-11-02"
-  },
-  {
-   "titel": "BFH: Voraussetzungen für den Eintritt der Ablaufhemmung bei Ermittlungen der Steuerfahndung",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/eintritt-der-ablaufhemmung-bei-ermittlungen-der-steuerfahndung_166_702076.html",
-   "datum": "2026-11-02"
-  },
-  {
-   "titel": "BMF Referententwurf: Neues Geldwäschebekämpfungsgesetz",
-   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/gesetz-zur-umsetzung-der-sechsten-eu-geldwaescherichtlinie_168_702140.html",
-   "datum": "2026-11-02"
   }
  ]
 }
