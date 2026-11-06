@@ -2,6 +2,16 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "FG Düsseldorf: Steuerbefreiung für ein Familienheim bei nur beabsichtigter Eigennutzung",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/steuerbefreiung-fuer-familienheim-bei-geplanter-eigennutzung_166_698226.html",
+   "datum": "2026-11-06"
+  },
+  {
+   "titel": "FG Düsseldorf: Kein Vertrauensschutz in die Anwendung der Fünftelregelung",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/kein-vertrauensschutz-in-fuenftelregelung_166_698120.html",
+   "datum": "2026-11-06"
+  },
+  {
    "titel": "BFH Pressemitteilung: Beschäftigtenzahl im Sinne des § 13a Abs. 1 Satz 4 ErbStG a.F.",
    "link": "https://www.haufe.de/steuern/rechtsprechung/verschonung-von-betriebsvermoegen-beschaeftigtenzahl_166_702534.html",
    "datum": "2026-11-05"
@@ -30,16 +40,6 @@
    "titel": "Bundestag: Anhörung zum Einkommensteuerreformgesetz 2027",
    "link": "https://www.haufe.de/steuern/gesetzgebung-politik/bundestag-anhoerung-zum-einkommensteuerreformgesetz-2027_168_702452.html",
    "datum": "2026-11-05"
-  },
-  {
-   "titel": "Bundestag: Anhörung zum Jahressteuergesetz 2026",
-   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/bundestag-anhoerung-zum-jahressteuergesetz-2026_168_702466.html",
-   "datum": "2026-11-04"
-  },
-  {
-   "titel": "Bundesregierung: Umsatzsteuerliche Behandlung von Mitgliedsbeiträgen",
-   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/umsatzsteuerliche-behandlung-von-mitgliedsbeitraegen_168_702350.html",
-   "datum": "2026-11-04"
   }
  ]
 }
