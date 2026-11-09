@@ -2,6 +2,26 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "BFH: Umsetzung einer Verständigungsvereinbarung nach dem Schiedsübereinkommen",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/verstaendigungsvereinbarung-nach-dem-schiedsuebereinkommen_166_702798.html",
+   "datum": "2026-11-09"
+  },
+  {
+   "titel": "BFH: Zur Abzugsfähigkeit von Prozesskosten als außergewöhnliche Belastungen",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/prozesskosten-als-aussergewoehnliche-belastungen_166_702780.html",
+   "datum": "2026-11-09"
+  },
+  {
+   "titel": "BFH: Beschäftigtenzahl im Sinne des § 13a Abs. 1 Satz 4 ErbStG a.F.",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/verschonung-von-betriebsvermoegen-beschaeftigtenzahl_166_702534.html",
+   "datum": "2026-11-09"
+  },
+  {
+   "titel": "Bundestag: Gesetz zum neuen DBA mit der Ukraine",
+   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/bmf-neues-dba-mit-der-ukraine-unterzeichnet_168_687814.html",
+   "datum": "2026-11-09"
+  },
+  {
    "titel": "BMF: § 8c KStG und Wirkung auf ein Verlustausgleichsvolumen des Vorjahres",
    "link": "https://www.haufe.de/steuern/8c-kstg-verlustausgleichsvolumen-des-vorjahres_172_702740.html",
    "datum": "2026-11-06"
@@ -17,28 +37,8 @@
    "datum": "2026-11-06"
   },
   {
-   "titel": "BFH Pressemitteilung: Beschäftigtenzahl im Sinne des § 13a Abs. 1 Satz 4 ErbStG a.F.",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/verschonung-von-betriebsvermoegen-beschaeftigtenzahl_166_702534.html",
-   "datum": "2026-11-05"
-  },
-  {
    "titel": "BFH: Alle am 5.11.2026 veröffentlichten Entscheidungen",
    "link": "https://www.haufe.de/steuern/rechtsprechung/bfh-alle-am-5112026-veroeffentlichten-entscheidungen_166_702518.html",
-   "datum": "2026-11-05"
-  },
-  {
-   "titel": "Arbeitslohn oder Kapitaleinkünfte?: Erträge aus virtuellen Mitarbeiteroptionen nach dem Ausscheiden",
-   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/ertraege-aus-virtuellen-mitarbeiteroptionen-nach-dem-ausscheiden_170_701314.html",
-   "datum": "2026-11-05"
-  },
-  {
-   "titel": "Besteuerung von Kryptowerten: Der Steuerberater ist die Brücke zwischen den Kryptowelten",
-   "link": "https://www.haufe.de/steuern/taxulting/besteuerung-von-kryptowerten-der-steuerberater-kann-vermitteln_598848_702330.html",
-   "datum": "2026-11-05"
-  },
-  {
-   "titel": "Serie: Herausforderung Wertpapierbuchhaltung: Derivate im betrieblichen Wertpapierdepot: Optionen, Futures und Leerverkäufe",
-   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/optionen-futures-und-leerverkaeufe-im-betrieblichen-depot_170_702388.html",
    "datum": "2026-11-05"
   }
  ]
