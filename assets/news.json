@@ -2,6 +2,21 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "Neue Vordrucke und wichtige steuerliche Änderungen: Lohnsteuer-Ermäßigungsverfahren 2027",
+   "link": "https://www.haufe.de/steuern/finanzverwaltung/lohnsteuer-ermaessigungsverfahren-2027_164_702774.html",
+   "datum": "2026-11-10"
+  },
+  {
+   "titel": "BGH: Steuerhinterziehung auch bei nachgeholter Zusammenfassender Meldung",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/steuerhinterziehung-verspaetete-zusammenfassende-meldung_166_702854.html",
+   "datum": "2026-11-10"
+  },
+  {
+   "titel": "Niedersächsisches FG: Kosten für ein außerhäusliches Arbeitszimmer",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/kosten-fuer-ein-ausserhaeusliches-arbeitszimmer_166_698372.html",
+   "datum": "2026-11-10"
+  },
+  {
    "titel": "BFH: Umsetzung einer Verständigungsvereinbarung nach dem Schiedsübereinkommen",
    "link": "https://www.haufe.de/steuern/rechtsprechung/verstaendigungsvereinbarung-nach-dem-schiedsuebereinkommen_166_702798.html",
    "datum": "2026-11-09"
@@ -25,21 +40,6 @@
    "titel": "BMF: § 8c KStG und Wirkung auf ein Verlustausgleichsvolumen des Vorjahres",
    "link": "https://www.haufe.de/steuern/8c-kstg-verlustausgleichsvolumen-des-vorjahres_172_702740.html",
    "datum": "2026-11-06"
-  },
-  {
-   "titel": "FG Düsseldorf: Steuerbefreiung für ein Familienheim bei nur beabsichtigter Eigennutzung",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/steuerbefreiung-fuer-familienheim-bei-geplanter-eigennutzung_166_698226.html",
-   "datum": "2026-11-06"
-  },
-  {
-   "titel": "FG Düsseldorf: Kein Vertrauensschutz in die Anwendung der Fünftelregelung",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/kein-vertrauensschutz-in-fuenftelregelung_166_698120.html",
-   "datum": "2026-11-06"
-  },
-  {
-   "titel": "BFH: Alle am 5.11.2026 veröffentlichten Entscheidungen",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/bfh-alle-am-5112026-veroeffentlichten-entscheidungen_166_702518.html",
-   "datum": "2026-11-05"
   }
  ]
 }
