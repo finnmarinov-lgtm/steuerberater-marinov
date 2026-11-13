@@ -2,6 +2,26 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "Bundestag: Jahressteuergesetz 2026 verabschiedet",
+   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/bmf-referentenentwurf-fuer-ein-jahressteuergesetzes-2026_168_687492.html",
+   "datum": "2026-11-13"
+  },
+  {
+   "titel": "Bundestag: Gesetz zur Stärkung der Zollverwaltung verabschiedet",
+   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/zollfinanzgerechtigkeitsgesetz_168_679030.html",
+   "datum": "2026-11-13"
+  },
+  {
+   "titel": "Umsatzsteuer: Dienstleister zieht ins Drittland – was gilt für deutsche B2B-Kunden?",
+   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/umsatzsteuer-dienstleister-zieht-ins-drittland_170_702422.html",
+   "datum": "2026-11-13"
+  },
+  {
+   "titel": "Die gesetzlichen Änderungen im Umsatzsteuerrecht",
+   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/umsatzsteuer-2027/die-gesetzlichen-aenderungen-im-umsatzsteuerrecht-2026-2027_170_702784.html",
+   "datum": "2026-11-13"
+  },
+  {
    "titel": "BFH Pressemitteilung: Kindergeldanspruch von wirtschaftlich nicht aktiven EU- und EWR-Bürgern",
    "link": "https://www.haufe.de/steuern/rechtsprechung/kindergeldanspruch-von-wirtschaftlich-nicht-aktiven-eu-buergern_166_703142.html",
    "datum": "2026-11-12"
@@ -17,28 +37,8 @@
    "datum": "2026-11-12"
   },
   {
-   "titel": "Die gesetzlichen Änderungen im Umsatzsteuerrecht",
-   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/umsatzsteuer-2027/die-gesetzlichen-aenderungen-im-umsatzsteuerrecht-2026-2027_170_702784.html",
-   "datum": "2026-11-12"
-  },
-  {
    "titel": "BMF: Buchführungsverlagerung ins Ausland und Verzögerungsgeld im AEAO neu geregelt",
    "link": "https://www.haufe.de/steuern/finanzverwaltung/neuregelung-buchfuehrung-im-ausland-und-verzoegerungsgeld_164_703032.html",
-   "datum": "2026-11-11"
-  },
-  {
-   "titel": "Rat der EU: Weitere Vereinfachung der Mehrwertsteuer-Regelung für Online-Verkäufe",
-   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/weitere-vereinfachung-der-mwst-regelung-fuer-online-verkaeufe_168_703026.html",
-   "datum": "2026-11-11"
-  },
-  {
-   "titel": "Gebäudeart und installierte Bruttoleistung: Steuerbefreiung für Photovoltaikanlage",
-   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/steuerbefreiung-fuer-photovoltaikanlage_170_702976.html",
-   "datum": "2026-11-11"
-  },
-  {
-   "titel": "Plan vom BMF: Welche Auswirkungen der Aktionsplan gegen Steuer- und Finanzkriminalität hat",
-   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/auswirkungen-aktionsplan-steuer-und-finanzkriminalitaet_168_702974.html",
    "datum": "2026-11-11"
   }
  ]
