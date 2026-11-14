@@ -2,6 +2,11 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "BMF: Abgrenzung zwischen Entgelt und Schadensersatz bei vorzeitiger Vertragsbeendigung",
+   "link": "https://www.haufe.de/steuern/finanzverwaltung/bmf-schadensersatz-bei-vorzeitiger-vertragsbeendigung_164_703186.html",
+   "datum": "2026-11-13"
+  },
+  {
    "titel": "Bundestag: Jahressteuergesetz 2026 verabschiedet",
    "link": "https://www.haufe.de/steuern/gesetzgebung-politik/bmf-referentenentwurf-fuer-ein-jahressteuergesetzes-2026_168_687492.html",
    "datum": "2026-11-13"
@@ -35,11 +40,6 @@
    "titel": "Pflicht zur E-Rechnung ab 2027: E-Rechnung: Die große Umstellungswelle kommt erst noch",
    "link": "https://www.haufe.de/steuern/taxulting/e-rechnung-die-grosse-umstellungswelle-kommt-erst-noch_598848_702872.html",
    "datum": "2026-11-12"
-  },
-  {
-   "titel": "BMF: Buchführungsverlagerung ins Ausland und Verzögerungsgeld im AEAO neu geregelt",
-   "link": "https://www.haufe.de/steuern/finanzverwaltung/neuregelung-buchfuehrung-im-ausland-und-verzoegerungsgeld_164_703032.html",
-   "datum": "2026-11-11"
   }
  ]
 }
