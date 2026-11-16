@@ -2,6 +2,26 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "BFH: Kindergeldanspruch einer nicht erwerbstätigen Lebensgefährtin eines EU-Bürgers",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/kindergeld-von-wirtschaftlich-nicht-aktiven-eu-ewr-buergern_166_703226.html",
+   "datum": "2026-11-16"
+  },
+  {
+   "titel": "BFH: Schuldzinsenabzug nach Formwechsel einer Kapitalgesellschaft in eine Personengesellschaft",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/nicht-abziehbare-schuldzinsen-nach-formwechsel_166_703220.html",
+   "datum": "2026-11-16"
+  },
+  {
+   "titel": "BFH: Anwendung des § 175b Abs. 1 AO auch bei korrigierter Datenübermittlung",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/korrektur-einer-rentenbezugsmitteilung_166_703218.html",
+   "datum": "2026-11-16"
+  },
+  {
+   "titel": "Verhör(t) – Steuerthemen auf der Spur: Podcast: Fehlerkultur in der Kanzlei – warum Schweigen teuer sein kann",
+   "link": "https://www.haufe.de/steuern/taxulting/podcast-fehlerkultur-in-der-kanzlei-wenn-schweigen-teuer-ist_598848_703152.html",
+   "datum": "2026-11-16"
+  },
+  {
    "titel": "BMF: Abgrenzung zwischen Entgelt und Schadensersatz bei vorzeitiger Vertragsbeendigung",
    "link": "https://www.haufe.de/steuern/finanzverwaltung/bmf-schadensersatz-bei-vorzeitiger-vertragsbeendigung_164_703186.html",
    "datum": "2026-11-13"
@@ -20,26 +40,6 @@
    "titel": "Umsatzsteuer: Dienstleister zieht ins Drittland – was gilt für deutsche B2B-Kunden?",
    "link": "https://www.haufe.de/steuern/steuerwissen-tipps/umsatzsteuer-dienstleister-zieht-ins-drittland_170_702422.html",
    "datum": "2026-11-13"
-  },
-  {
-   "titel": "Die gesetzlichen Änderungen im Umsatzsteuerrecht",
-   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/umsatzsteuer-2027/die-gesetzlichen-aenderungen-im-umsatzsteuerrecht-2026-2027_170_702784.html",
-   "datum": "2026-11-13"
-  },
-  {
-   "titel": "BFH Pressemitteilung: Kindergeldanspruch von wirtschaftlich nicht aktiven EU- und EWR-Bürgern",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/kindergeldanspruch-von-wirtschaftlich-nicht-aktiven-eu-buergern_166_703142.html",
-   "datum": "2026-11-12"
-  },
-  {
-   "titel": "BFH: Alle am 12.11.2026 veröffentlichten Entscheidungen",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/bfh-alle-am-12112026-veroeffentlichten-entscheidungen_166_703128.html",
-   "datum": "2026-11-12"
-  },
-  {
-   "titel": "Pflicht zur E-Rechnung ab 2027: E-Rechnung: Die große Umstellungswelle kommt erst noch",
-   "link": "https://www.haufe.de/steuern/taxulting/e-rechnung-die-grosse-umstellungswelle-kommt-erst-noch_598848_702872.html",
-   "datum": "2026-11-12"
   }
  ]
 }
