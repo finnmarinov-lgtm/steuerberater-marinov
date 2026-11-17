@@ -2,6 +2,26 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "FG Köln: Vorbeugende negative Feststellungsklage gegen Mindeststeuergesetz",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/negative-feststellungsklage-gegen-mindeststeuergesetz_166_701756.html",
+   "datum": "2026-11-17"
+  },
+  {
+   "titel": "FG Düsseldorf: Auftrag zur Erstellung eines Gutachtens ausreichend für Zweifel am Grundbesitzwert?",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/gutachterauftrag-fuer-grundbesitzwert-ausreichend-fuer-adv_166_703288.html",
+   "datum": "2026-11-17"
+  },
+  {
+   "titel": "FG Düsseldorf: Vorsteuerabzug bei Dienstfahrzeugen im Konzern bei sonst steuerfreien Umsätzen",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/vorsteuerabzug-dienstfahrzeuge-konzern_166_703276.html",
+   "datum": "2026-11-17"
+  },
+  {
+   "titel": "BMF: Vorsteuerabzug in der kommunalen Entsorgung unter § 2b UStG",
+   "link": "https://www.haufe.de/steuern/finanzverwaltung/bmf-vorsteuerabzug-in-der-kommunalen-entsorgung-unter-2b-ustg_164_703238.html",
+   "datum": "2026-11-16"
+  },
+  {
    "titel": "BFH: Kindergeldanspruch einer nicht erwerbstätigen Lebensgefährtin eines EU-Bürgers",
    "link": "https://www.haufe.de/steuern/rechtsprechung/kindergeld-von-wirtschaftlich-nicht-aktiven-eu-ewr-buergern_166_703226.html",
    "datum": "2026-11-16"
@@ -20,26 +40,6 @@
    "titel": "Verhör(t) – Steuerthemen auf der Spur: Podcast: Fehlerkultur in der Kanzlei – warum Schweigen teuer sein kann",
    "link": "https://www.haufe.de/steuern/taxulting/podcast-fehlerkultur-in-der-kanzlei-wenn-schweigen-teuer-ist_598848_703152.html",
    "datum": "2026-11-16"
-  },
-  {
-   "titel": "BMF: Abgrenzung zwischen Entgelt und Schadensersatz bei vorzeitiger Vertragsbeendigung",
-   "link": "https://www.haufe.de/steuern/finanzverwaltung/bmf-schadensersatz-bei-vorzeitiger-vertragsbeendigung_164_703186.html",
-   "datum": "2026-11-13"
-  },
-  {
-   "titel": "Bundestag: Jahressteuergesetz 2026 verabschiedet",
-   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/bmf-referentenentwurf-fuer-ein-jahressteuergesetzes-2026_168_687492.html",
-   "datum": "2026-11-13"
-  },
-  {
-   "titel": "Bundestag: Gesetz zur Stärkung der Zollverwaltung verabschiedet",
-   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/zollfinanzgerechtigkeitsgesetz_168_679030.html",
-   "datum": "2026-11-13"
-  },
-  {
-   "titel": "Umsatzsteuer: Dienstleister zieht ins Drittland – was gilt für deutsche B2B-Kunden?",
-   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/umsatzsteuer-dienstleister-zieht-ins-drittland_170_702422.html",
-   "datum": "2026-11-13"
   }
  ]
 }
