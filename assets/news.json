@@ -2,6 +2,21 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "Sächsisches FG: Vorsteueraufteilung bei steuerpflichtiger Kfz-Überlassung",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/vorsteueraufteilung-pflegedienst-kfz-ueberlassung_166_702884.html",
+   "datum": "2026-11-24"
+  },
+  {
+   "titel": "FG Düsseldorf: Mitarbeiterbeteiligung mit Ausschluss von Azubis und Minijobbern",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/mitarbeiteraktien-ausschluss-azubis-minijobber_166_698112.html",
+   "datum": "2026-11-24"
+  },
+  {
+   "titel": "Zeitpunkt der Entrichtung maßgeblich: Keine Säumniszuschläge trotz Rücklastschrift in der Insolvenz",
+   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/keine-saeumniszuschlaege-trotz-ruecklastschrift-in-der-insolvenz_170_702296.html",
+   "datum": "2026-11-24"
+  },
+  {
    "titel": "BFH: Vergebliche Aufwendungen für ein BHKW infolge eines betrügerischen Schneeballsystems",
    "link": "https://www.haufe.de/steuern/rechtsprechung/anerkennung-eines-gewerblichen-verlustes-infolge-betrugs_166_703698.html",
    "datum": "2026-11-23"
@@ -25,21 +40,6 @@
    "titel": "BFH: Überlassung von Dachflächen für Photovoltaikanlagen an eine Organgesellschaft",
    "link": "https://www.haufe.de/steuern/rechtsprechung/ueberlassung-von-dachflaechen-fuer-photovoltaikanlagen_166_703574.html",
    "datum": "2026-11-23"
-  },
-  {
-   "titel": "BGH: Kammermitgliedschaft von Geschäftsführern einer Anwaltsgesellschaft",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/anwaltsgesellschaft-kammermitgliedschaft-der-geschaeftsfuehrer_166_703628.html",
-   "datum": "2026-11-23"
-  },
-  {
-   "titel": "FG Baden Württemberg: Erbschaftsteuerbefreiung bei Gemeinnützigkeit nach deutschem Recht",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/erbschaftsteuerbefreiung-gemeinnuetzigkeit-nach-deutschem-recht_166_703646.html",
-   "datum": "2026-11-23"
-  },
-  {
-   "titel": "Bundesrat: Änderung der Lohnsteuer-Richtlinien",
-   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/geplante-aenderung-der-lohnsteuer-richtlinien_168_694786.html",
-   "datum": "2026-11-20"
   }
  ]
 }
