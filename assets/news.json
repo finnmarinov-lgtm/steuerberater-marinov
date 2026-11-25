@@ -2,6 +2,31 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "BMF: Steuerbescheinigungen bei American Depositary Receipts",
+   "link": "https://www.haufe.de/steuern/finanzverwaltung/bmf-steuerbescheinigungen-bei-american-depositary-receipts_164_703928.html",
+   "datum": "2026-11-25"
+  },
+  {
+   "titel": "BMF Referentenentwurf: Gesetz zur Weiterentwicklung der Grunderwerbsteuer",
+   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/gesetz-zur-weiterentwicklung-der-grunderwerbsteuer_168_703966.html",
+   "datum": "2026-11-25"
+  },
+  {
+   "titel": "Serie: Schlussabrechnungen der Coronahilfen: VG München: Anzeigenblatt scheitert mit Überbrückungshilfe IV",
+   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/keine-ueberbrueckungshilfe-iv-fuer-anzeigenblatt_170_703810.html",
+   "datum": "2026-11-25"
+  },
+  {
+   "titel": "Wann bleibt Deutschland steuerberechtigt?: Erben und Schenken nach dem Wegzug aus Deutschland",
+   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/erbschaftsteuer-nach-dem-wegzug-aus-deutschland_170_703416.html",
+   "datum": "2026-11-25"
+  },
+  {
+   "titel": "Haufe KI-Online-Konferenz: Produktiver arbeiten mit KI",
+   "link": "https://www.haufe.de/steuern/taxulting/haufe-ki-online-konferenz-2027_598848_703930.html",
+   "datum": "2026-11-25"
+  },
+  {
    "titel": "Sächsisches FG: Vorsteueraufteilung bei steuerpflichtiger Kfz-Überlassung",
    "link": "https://www.haufe.de/steuern/rechtsprechung/vorsteueraufteilung-pflegedienst-kfz-ueberlassung_166_702884.html",
    "datum": "2026-11-24"
@@ -15,31 +40,6 @@
    "titel": "Zeitpunkt der Entrichtung maßgeblich: Keine Säumniszuschläge trotz Rücklastschrift in der Insolvenz",
    "link": "https://www.haufe.de/steuern/steuerwissen-tipps/keine-saeumniszuschlaege-trotz-ruecklastschrift-in-der-insolvenz_170_702296.html",
    "datum": "2026-11-24"
-  },
-  {
-   "titel": "BFH: Vergebliche Aufwendungen für ein BHKW infolge eines betrügerischen Schneeballsystems",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/anerkennung-eines-gewerblichen-verlustes-infolge-betrugs_166_703698.html",
-   "datum": "2026-11-23"
-  },
-  {
-   "titel": "BFH: Keine rückwirkende Heilung einer verunglückten Organschaft",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/verunglueckte-organschaft_166_703694.html",
-   "datum": "2026-11-23"
-  },
-  {
-   "titel": "Diskriminierende Steuervorschriften: Neues Vertragsverletzungsverfahren der EU-Kommission",
-   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/neue-vertragsverletzungsverfahren-der-eu-kommission_168_703682.html",
-   "datum": "2026-11-23"
-  },
-  {
-   "titel": "Umsatzsteuer Konzernumlagen: Umsatzsteuer bei Kostenweiterbelastungen im Konzern",
-   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/umsatzsteuer-bei-kostenweiterbelastungen-im-konzern_170_703424.html",
-   "datum": "2026-11-23"
-  },
-  {
-   "titel": "BFH: Überlassung von Dachflächen für Photovoltaikanlagen an eine Organgesellschaft",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/ueberlassung-von-dachflaechen-fuer-photovoltaikanlagen_166_703574.html",
-   "datum": "2026-11-23"
   }
  ]
 }
