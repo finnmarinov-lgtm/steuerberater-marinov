@@ -2,6 +2,31 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "BFH Pressemitteilung: Vorliegen eines einheitlichen freiberuflichen Betriebs",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/ermittlung-nicht-abziehbarer-schuldzinsen-bei-freiberuflern_166_704146.html",
+   "datum": "2026-11-26"
+  },
+  {
+   "titel": "BFH: Alle am 26.11.2026 veröffentlichten Entscheidungen",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/bfh-alle-am-26112026-veroeffentlichten-entscheidungen_166_704134.html",
+   "datum": "2026-11-26"
+  },
+  {
+   "titel": "Stellenanzeigen neu gedacht: Warum Kanzleien das Profil der Steuerfachangestellten neu schreiben sollten",
+   "link": "https://www.haufe.de/steuern/taxulting/wie-kanzleien-steuerfachangestellte-erfolgreich-recruitieren_598848_703894.html",
+   "datum": "2026-11-26"
+  },
+  {
+   "titel": "Berechnung der einjährigen Haltefrist: Haltefrist bei mehreren Krypto-Wallets",
+   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/haltefrist-bei-mehreren-krypto-wallets_170_703378.html",
+   "datum": "2026-11-26"
+  },
+  {
+   "titel": "BFH: Neue anhängige Verfahren im November 2026",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/bfh-neue-anhaengige-verfahren-im-november-2026_166_704080.html",
+   "datum": "2026-11-26"
+  },
+  {
    "titel": "BMF: Steuerbescheinigungen bei American Depositary Receipts",
    "link": "https://www.haufe.de/steuern/finanzverwaltung/bmf-steuerbescheinigungen-bei-american-depositary-receipts_164_703928.html",
    "datum": "2026-11-25"
@@ -12,34 +37,9 @@
    "datum": "2026-11-25"
   },
   {
-   "titel": "Serie: Schlussabrechnungen der Coronahilfen: VG München: Anzeigenblatt scheitert mit Überbrückungshilfe IV",
+   "titel": "Serie: Schlussabrechnungen der Coronahilfen: Anzeigenblatt scheitert mit Überbrückungshilfe IV",
    "link": "https://www.haufe.de/steuern/steuerwissen-tipps/keine-ueberbrueckungshilfe-iv-fuer-anzeigenblatt_170_703810.html",
    "datum": "2026-11-25"
-  },
-  {
-   "titel": "Wann bleibt Deutschland steuerberechtigt?: Erben und Schenken nach dem Wegzug aus Deutschland",
-   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/erbschaftsteuer-nach-dem-wegzug-aus-deutschland_170_703416.html",
-   "datum": "2026-11-25"
-  },
-  {
-   "titel": "Haufe KI-Online-Konferenz: Produktiver arbeiten mit KI",
-   "link": "https://www.haufe.de/steuern/taxulting/haufe-ki-online-konferenz-2027_598848_703930.html",
-   "datum": "2026-11-25"
-  },
-  {
-   "titel": "Sächsisches FG: Vorsteueraufteilung bei steuerpflichtiger Kfz-Überlassung",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/vorsteueraufteilung-pflegedienst-kfz-ueberlassung_166_702884.html",
-   "datum": "2026-11-24"
-  },
-  {
-   "titel": "FG Düsseldorf: Mitarbeiterbeteiligung mit Ausschluss von Azubis und Minijobbern",
-   "link": "https://www.haufe.de/steuern/rechtsprechung/mitarbeiteraktien-ausschluss-azubis-minijobber_166_698112.html",
-   "datum": "2026-11-24"
-  },
-  {
-   "titel": "Zeitpunkt der Entrichtung maßgeblich: Keine Säumniszuschläge trotz Rücklastschrift in der Insolvenz",
-   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/keine-saeumniszuschlaege-trotz-ruecklastschrift-in-der-insolvenz_170_702296.html",
-   "datum": "2026-11-24"
   }
  ]
 }
