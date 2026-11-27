@@ -2,6 +2,21 @@
  "quelle": "Haufe",
  "meldungen": [
   {
+   "titel": "Gesetzgebung: Rückblick über die Steueränderungen für das Jahr 2026",
+   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/jahreswechsel-steueraenderungen-2026_168_666612.html",
+   "datum": "2026-11-27"
+  },
+  {
+   "titel": "FG Baden-Württemberg: Anwendbarkeit von § 6a Satz 3 GrEStG",
+   "link": "https://www.haufe.de/steuern/rechtsprechung/fg-baden-wuerttemberg-anwendbarkeit-von-6a-satz-3-grestg_166_703372.html",
+   "datum": "2026-11-27"
+  },
+  {
+   "titel": "Übergangsregeln und Vorsteuerabzug: DStV verlangt mehr Rechtssicherheit bei E-Rechnungen",
+   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/dstv-verlangt-mehr-rechtssicherheit-bei-e-rechnungen_168_704158.html",
+   "datum": "2026-11-27"
+  },
+  {
    "titel": "BFH Pressemitteilung: Vorliegen eines einheitlichen freiberuflichen Betriebs",
    "link": "https://www.haufe.de/steuern/rechtsprechung/ermittlung-nicht-abziehbarer-schuldzinsen-bei-freiberuflern_166_704146.html",
    "datum": "2026-11-26"
@@ -25,21 +40,6 @@
    "titel": "BFH: Neue anhängige Verfahren im November 2026",
    "link": "https://www.haufe.de/steuern/rechtsprechung/bfh-neue-anhaengige-verfahren-im-november-2026_166_704080.html",
    "datum": "2026-11-26"
-  },
-  {
-   "titel": "BMF: Steuerbescheinigungen bei American Depositary Receipts",
-   "link": "https://www.haufe.de/steuern/finanzverwaltung/bmf-steuerbescheinigungen-bei-american-depositary-receipts_164_703928.html",
-   "datum": "2026-11-25"
-  },
-  {
-   "titel": "BMF Referentenentwurf: Gesetz zur Weiterentwicklung der Grunderwerbsteuer",
-   "link": "https://www.haufe.de/steuern/gesetzgebung-politik/gesetz-zur-weiterentwicklung-der-grunderwerbsteuer_168_703966.html",
-   "datum": "2026-11-25"
-  },
-  {
-   "titel": "Serie: Schlussabrechnungen der Coronahilfen: Anzeigenblatt scheitert mit Überbrückungshilfe IV",
-   "link": "https://www.haufe.de/steuern/steuerwissen-tipps/keine-ueberbrueckungshilfe-iv-fuer-anzeigenblatt_170_703810.html",
-   "datum": "2026-11-25"
   }
  ]
 }
